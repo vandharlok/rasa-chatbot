@@ -1,0 +1,86 @@
+# The config recipe.
+# https://rasa.com/docs/rasa/model-configuration/
+recipe: default.v1
+
+
+
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: pt
+
+
+
+#review this pipeline
+
+pipeline:
+- name: SpacyNLP
+  model: pt_core_news_md
+- name: SpacyTokenizer
+- name: RegexFeaturizer
+  case_sensitive: false
+- name: LanguageModelFeaturizer
+  model_name: "distilbert"
+  model_weights: "distilbert-base-uncased"
+  cache_dir: ./.cache
+- name: SpacyFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: DIETClassifier
+  epochs: 60
+  learning_rate: 0.0006  
+  constrain_similarities: true
+  batch_size: 20  
+  regularization_constant: 0.05
+  early_stopping_patience: 10
+  checkpoint_model: true
+  tensorboard_log_directory: "./tensorboard/DIET"
+  tensorboard_log_level: epoch
+- name: FallbackClassifier
+  threshold: 0.7
+  ambiguity_threshold: 0.2
+  core_fallback_action_name: "action_custom_fallback"
+- name: DucklingEntityExtractor
+  url: http://localhost:8000
+  dimensions: ["time", "PhoneNumber"]
+  locale: pt_BR
+  timezone: "America/Sao_Paulo"
+
+
+policies:
+- name: TEDPolicy
+  max_history: 10
+  epochs: 60
+  batch_size: 
+  - 8
+  - 16
+  early_stopping_patience: 10
+  learning_rate: 0.001
+  regularization_constant: 0.0011 
+  dropout_rate: 0.25
+  constrain_similarities: true
+  model_confidence: "softmax"
+  random_seed: 42
+  core_fallback_threshold: 0.7
+  core_fallback_action_name: "action_custom_fallback"
+  enable_fallback_prediction: true
+  check_for_contradictions: true
+  tensorboard_log_directory: "./tensorboard"
+  tensorboard_log_level: epoch
+- name: RulePolicy
+  max_history: 4
+  core_fallback_threshold: 0.7
+  core_fallback_action_name: "action_custom_fallback"
+  enable_fallback_prediction: true
+  check_for_contradictions: true
+  tensorboard_log_directory: "./tensorboard"
+  tensorboard_log_level: epoch
+- name: AugmentedMemoizationPolicy
+  max_history: 4
+  core_fallback_threshold: 0.7
+  core_fallback_action_name: "action_custom_fallback"
+  enable_fallback_prediction: true
+  check_for_contradictions: true
+  tensorboard_log_directory: "./tensorboard"
+  tensorboard_log_level: epoch
+
+
+assistant_id: 20240515-202338-respectful-coriander

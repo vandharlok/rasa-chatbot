@@ -1,0 +1,363 @@
+version: "3.1"
+
+stories:
+
+#SOBRE MARCAR CONSULTA //////////////////////////////////////////////////////////////////////////////////////////////
+#POSITIVO 
+#marcando consultas
+
+
+
+
+- story: nao marcando consulta
+  steps:
+  - intent: marcar_consulta
+  - action: utter_marcar_consulta
+  - intent: negacao
+  - action: utter_show_options
+  - action: action_reset_all
+
+- story: marcando consulta dps de perguntar algo (negativo)
+  steps: 
+  - intent: marcar_consulta
+  - action: utter_marcar_consulta
+  - intent: concordancia
+  - action: utter_verifica_cadastro
+  - intent: concordancia
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - form_completed: true
+  - action: utter_confirm_appointment
+  - intent: negacao
+  - action: utter_show_options
+  - action: action_reset_all
+
+
+- story: marcando consulta dps de perguntar algo
+  steps:
+  - intent: marcar_consulta
+  - action: utter_marcar_consulta
+  - intent: concordancia
+  - action: utter_verifica_cadastro
+  - intent: concordancia
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - form_completed: true
+  - action: utter_confirm_appointment
+  - intent: concordancia
+  - action: action_add_event
+  - slot_was_set:
+    - event_completed: true
+  - action: utter_terminar_conversa
+  - intent: negacao
+  - action: utter_final
+  - intent: provide_feedback
+  - slot_was_set:
+      - feedback
+  - action: action_store_feedback
+ 
+
+- story: marcar consulta ja cadastrado
+  steps:
+  - intent: marcar_consulta
+  - action: utter_marcar_consulta
+  - intent: concordancia
+  - action: utter_verifica_cadastro
+  - intent: concordancia
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - form_completed: true
+  - action: utter_confirm_appointment
+  - intent: concordancia
+  - action: action_add_event
+  - slot_was_set:
+    - event_completed: true
+  - action: utter_terminar_conversa
+  - intent: negacao
+  - action: utter_final
+  - intent: provide_feedback
+  - slot_was_set:
+      - feedback
+  - action: action_store_feedback
+ 
+
+- story: marcar consulta sem cadastrado
+  steps:
+  - intent: marcar_consulta
+  - action: utter_marcar_consulta
+  - intent: concordancia
+  - action: utter_verifica_cadastro
+  - intent: negacao
+  - action: utter_inform_form
+  - action: cadastro_form
+  - active_loop: cadastro_form
+  - slot_was_set:
+    - login_sucess: true 
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - form_completed: true
+  - action: utter_confirm_appointment
+  - intent: concordancia
+  - action: action_add_event
+  - slot_was_set:
+    - event_completed: true
+  - action: utter_terminar_conversa
+  - intent: negacao
+  - action: utter_final
+  - intent: provide_feedback
+  - slot_was_set:
+      - feedback
+  - action: action_store_feedback
+  
+
+- story: falando o dia que quer e marcando horario
+  steps:
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - form_completed: true
+  - action: utter_confirm_appointment
+  - intent: concordancia
+  - action: action_add_event
+  - slot_was_set:
+    - event_completed: true
+  - action: utter_terminar_conversa
+  - intent: negacao
+  - action: utter_final
+  - intent: provide_feedback
+  - slot_was_set:
+      - feedback
+  - action: action_store_feedback
+ 
+- story: falando o dia que quer e marcando horario 3
+  steps:
+  - action: event_form
+  - active_loop: event_form
+  - intent: perguntar_dias_livres
+  - action: action_find_free_slots
+  - active_loop: event_form
+  - slot_was_set:
+    - form_completed: true
+  - action: utter_confirm_appointment
+  - intent: concordancia
+  - action: action_add_event
+  - slot_was_set:
+    - event_completed: true
+  - action: utter_terminar_conversa
+
+
+- story: falando o dia que quer e marcando horario 2
+  steps:
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - form_completed: true
+  - action: utter_confirm_appointment
+  - intent: negacao
+  - action: utter_show_options
+  - action: action_reset_all
+  
+
+
+- story: depois de marcar o evento
+  steps:
+  - action: action_add_event
+  - slot_was_set:
+    - event_completed: true
+  - action: utter_terminar_conversa
+  - intent: negacao
+  - action: utter_final
+  - intent: provide_feedback
+  - slot_was_set:
+      - feedback
+  - action: action_store_feedback
+
+#CADASTARNADO //////////////////////////////////////////////////////////////////////////////////////////////
+#POSITIVO 
+
+- story: cadastrando do meio da conversa
+  steps:
+  - intent: iniciar_cadastro
+  - action: utter_inicia_cadastro
+  - intent: concordancia
+  - action: cadastro_form
+  - active_loop: cadastro_form
+  
+  
+  
+
+- story: cadastrando do meio da conversa
+  steps:
+  - intent: iniciar_cadastro
+  - action: utter_inicia_cadastro
+  - intent: negacao
+  - action: utter_show_options
+  - action: action_reset_all
+  
+#REMARCANDO CONSULTA//////////////////////////////////////////////////////////////////////////////////////////////
+#REMARCANDO CONSULTA//////////////////////////////////////////////////////////////////////////////////////////////
+#REMARCANDO CONSULTA//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+- story: alterar o dia de uma consulta dps de perguntar algo
+  steps:
+  - intent: remarcar_consulta
+  - action: utter_remarcar_consulta
+  - intent: concordancia
+  - action: modify_event_form
+  - active_loop: modify_event_form
+  - slot_was_set:
+    - form_completed: true
+  - action: utter_confirm_appointment
+  - intent: concordancia
+  - action: action_modify_google_calendar_event
+  - action: utter_terminar_conversa
+  - intent: negacao
+  - action: utter_final
+  - intent: provide_feedback
+  - slot_was_set:
+      - feedback
+  - action: action_store_feedback
+  
+
+
+- story: nao alterar o dia de uma consulta dps de perguntar algo
+  steps:
+  - intent: remarcar_consulta
+  - action: utter_remarcar_consulta
+  - intent: concordancia
+  - action: modify_event_form
+  - active_loop: modify_event_form
+  - slot_was_set:
+    - form_completed: true
+  - action: utter_confirm_appointment
+  - intent: negacao
+  - action: utter_show_options
+  - action: action_reset_all
+
+
+
+- story: alterar o dia de uma consulta
+  steps:
+  - intent: remarcar_consulta
+  - action: utter_remarcar_consulta
+  - intent: concordancia
+  - action: modify_event_form
+  - active_loop: modify_event_form
+  - slot_was_set:
+    - form_completed: true
+  - action: utter_confirm_appointment
+  - intent: concordancia
+  - action: action_modify_google_calendar_event
+  - action: utter_terminar_conversa
+  - intent: negacao
+  - action: utter_final
+  - intent: provide_feedback
+  - slot_was_set:
+      - feedback
+  - action: action_store_feedback
+  
+- story: falando o dia que quer e marcando horario 2
+  steps:
+  - intent: remarcar_consulta
+  - action: utter_remarcar_consulta
+  - intent: concordancia
+  - action: modify_event_form
+  - active_loop: modify_event_form
+  - intent: perguntar_dias_livres
+  - action: action_find_free_slots
+  - active_loop: modify_event_form
+  - slot_was_set:
+    - form_completed: true
+  - action: utter_confirm_appointment
+  - intent: concordancia
+  - action: action_modify_google_calendar_event
+  - slot_was_set:
+    - event_modify_completed: true
+  - action: utter_terminar_conversa
+
+
+
+- story: depois de marcar o evento
+  steps:
+  - action: action_modify_google_calendar_event
+  - slot_was_set:
+    - event_modify_completed: true
+  - action: utter_terminar_conversa
+  - intent: negacao
+  - action: utter_final
+  - intent: provide_feedback
+  - slot_was_set:
+      - feedback
+  - action: action_store_feedback
+  
+
+- story: nao remarcando consulta
+  steps:
+  - intent: remarcar_consulta
+  - action: utter_remarcar_consulta
+  - intent: negacao
+  - action: utter_show_options
+  - action: action_reset_all
+
+  
+#CANCELANDO CONSULTA//////////////////////////////////////////////////////////////////////////////////////////////
+#CANCELANDO CONSULTA//////////////////////////////////////////////////////////////////////////////////////////////
+#CANCELANDO CONSULTA//////////////////////////////////////////////////////////////////////////////////////////////
+#CANCELANDO CONSULTA//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+- story: depois de marcar o evento
+  steps:
+  - action: action_delete_google_calendar_event
+  - slot_was_set:
+    - event_delete_completed: true
+  - action: utter_terminar_conversa
+  - intent: negacao
+  - action: utter_final
+  - intent: provide_feedback
+  - slot_was_set:
+      - feedback
+  - action: action_store_feedback
+  
+
+- story: cancelando o cancelamento
+  steps:
+  - intent: cancelar_consulta
+  - action: utter_cancelar_consulta
+  - intent: negacao
+  - action: utter_show_options
+  - action: action_reset_all
+
+ 
+- story: cancelar o dia de uma consulta
+  steps:
+  - intent: cancelar_consulta
+  - action: utter_cancelar_consulta
+  - intent: concordancia
+  - action: delete_event_form
+  - active_loop: delete_event_form
+  - action: action_delete_google_calendar_event
+  - slot_was_set:
+    - event_delete_completed: true
+  - action: utter_terminar_conversa
+  - intent: negacao
+  - action: utter_final
+  - intent: provide_feedback
+  - slot_was_set:
+      - feedback
+  - action: action_store_feedback
+  
+
+
+
+#DUVIDA CONSULTA//////////////////////////////////////////////////////////////////////////////////////////////
+#DUVIDA CONSULTA//////////////////////////////////////////////////////////////////////////////////////////////
+#DUVIDA CONSULTA//////////////////////////////////////////////////////////////////////////////////////////////
+#DUVIDA CONSULTA//////////////////////////////////////////////////////////////////////////////////////////////

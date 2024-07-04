@@ -1,0 +1,770 @@
+[
+  {
+    "text": "Estou precisando cascelar minha dessão agendada para o mês que vem.",
+    "intent": "cancelar_consulta",
+    "intent_prediction": {
+      "name": "remarcar_consulta",
+      "confidence": 0.8386842012405396
+    }
+  },
+  {
+    "text": "dia",
+    "intent": "saudações",
+    "intent_prediction": {
+      "name": "concordancia",
+      "confidence": 0.46222469210624695
+    }
+  },
+  {
+    "text": "Quais são as furmas de parcelamento disponíveis?",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "perguntar_dias_livres",
+      "confidence": 0.48135146498680115
+    }
+  },
+  {
+    "text": "Quais são as opções de pagamentl que tem desconto?",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "perguntar_dias_livres",
+      "confidence": 0.7058292031288147
+    }
+  },
+  {
+    "text": "em ate quantas vezes voces parcelas no cartao",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.9194828867912292
+    }
+  },
+  {
+    "text": "Tem vaga dia",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "negacao",
+      "confidence": 0.5163795351982117
+    }
+  },
+  {
+    "text": "Pode ser dia",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "concordancia",
+      "confidence": 0.9767708778381348
+    }
+  },
+  {
+    "text": "Estão disponíveis alguma das tardes na próxima semana para um compromisso?",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "perguntar_dias_livres",
+      "confidence": 0.9825023412704468
+    }
+  },
+  {
+    "text": "Quero reservar um horário na primeira semana de novembro",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "marcar_consulta",
+      "confidence": 0.995888888835907
+    }
+  },
+  {
+    "text": "Qual o próximo horário livre que voces tem disponível?",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "perguntar_dias_livres",
+      "confidence": 0.9992596507072449
+    }
+  },
+  {
+    "text": "Estou tentando agendar algo para a próxima terça-feira à tarde, voces tem horarios?",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "marcar_consulta",
+      "confidence": 0.9450891017913818
+    }
+  },
+  {
+    "text": "Eu gostaria de verificar a disponibilidade para qualquer dia na próxima semana de manhã.",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "remarcar_consulta",
+      "confidence": 0.9987917542457581
+    }
+  },
+  {
+    "text": "regisurar uma conta?",
+    "intent": "iniciar_cadastro",
+    "intent_prediction": {
+      "name": "marcar_consulta",
+      "confidence": 0.9917239546775818
+    }
+  },
+  {
+    "text": "Melhor ainda",
+    "intent": "concordancia",
+    "intent_prediction": {
+      "name": "saudações",
+      "confidence": 0.8854818344116211
+    }
+  },
+  {
+    "text": "somente isso obrigado",
+    "intent": "negacao",
+    "intent_prediction": {
+      "name": "saber_local_de_atendimento",
+      "confidence": 0.7204957604408264
+    }
+  },
+  {
+    "text": "Posso acessar o resultado do meu exame online?",
+    "intent": "resultado_de_exames",
+    "intent_prediction": {
+      "name": "cancelar_consulta",
+      "confidence": 0.7819724678993225
+    }
+  },
+  {
+    "text": "Voces apeitam Pix?",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.9536608457565308
+    }
+  },
+  {
+    "text": "Vocts tarcelam a consulta?",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "preco_consulta",
+      "confidence": 0.26700127124786377
+    }
+  },
+  {
+    "text": "woces aceitau cheque?",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "verificar_plano_de_saude",
+      "confidence": 0.9845016598701477
+    }
+  },
+  {
+    "text": "Posro pagqr a consulta com oix?",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "verificar_plano_de_saude",
+      "confidence": 0.9118015766143799
+    }
+  },
+  {
+    "text": "Quazs carrões voces aceitam?",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "verificar_plano_de_saude",
+      "confidence": 0.9804469347000122
+    }
+  },
+  {
+    "text": "Voces aceitsm todos os tipos de cartãod",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.9779669046401978
+    }
+  },
+  {
+    "text": "voces acejtam pix",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.9796310663223267
+    }
+  },
+  {
+    "text": "aoces pircelam",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "preco_consulta",
+      "confidence": 0.6664522886276245
+    }
+  },
+  {
+    "text": "voces parcelam no ctrtao de credito",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.2687009274959564
+    }
+  },
+  {
+    "text": "caatão de crédito",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "verificar_plano_de_saude",
+      "confidence": 0.31651151180267334
+    }
+  },
+  {
+    "text": "Posso saber se voces tem alguma vaga este mes ainda?",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "cancelar_consulta",
+      "confidence": 0.4423527717590332
+    }
+  },
+  {
+    "text": "Existem vagas nos dias que se aproximam?",
+    "intent": "perguntar_dias_livres",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.7351939678192139
+    }
+  },
+  {
+    "text": "Como eu faço para começar meu cadastro no site?",
+    "intent": "iniciar_cadastro",
+    "intent_prediction": {
+      "name": "preco_consulta",
+      "confidence": 0.6082937717437744
+    }
+  },
+  {
+    "text": "Quero criae uua cohta.",
+    "intent": "iniciar_cadastro",
+    "intent_prediction": {
+      "name": "preco_consulta",
+      "confidence": 0.9138463735580444
+    }
+  },
+  {
+    "text": "Preciso de uma consulta urgente.",
+    "intent": "marcar_consulta",
+    "intent_prediction": {
+      "name": "preco_consulta",
+      "confidence": 0.5206032991409302
+    }
+  },
+  {
+    "text": "Precpso de uma consulta urgente",
+    "intent": "marcar_consulta",
+    "intent_prediction": {
+      "name": "preco_consulta",
+      "confidence": 0.9665942788124084
+    }
+  },
+  {
+    "text": "Preciso de uma consunta urgente",
+    "intent": "marcar_consulta",
+    "intent_prediction": {
+      "name": "preco_consulta",
+      "confidence": 0.978019118309021
+    }
+  },
+  {
+    "text": "Gostaria de saber o preço de uma consulta?",
+    "intent": "preco_consulta",
+    "intent_prediction": {
+      "name": "saber_local_de_atendimento",
+      "confidence": 0.9986485838890076
+    }
+  },
+  {
+    "text": "Com quais convenios médicos voces tem parceria?",
+    "intent": "verificar_plano_de_saude",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.9867984652519226
+    }
+  },
+  {
+    "text": "Cod fuais convenios médicos voces tek parceria?",
+    "intent": "verificar_plano_de_saude",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.9899489879608154
+    }
+  },
+  {
+    "text": "É possível obter uma receita nova hoje?",
+    "intent": "solicitar_receita",
+    "intent_prediction": {
+      "name": "marcar_consulta",
+      "confidence": 0.6230950355529785
+    }
+  },
+  {
+    "text": "Como renovar uma receita de uso contínuo?",
+    "intent": "solicitar_receita",
+    "intent_prediction": {
+      "name": "verificar_plano_de_saude",
+      "confidence": 0.8068373203277588
+    }
+  },
+  {
+    "text": "Preclso saqer pnde é o consultório.",
+    "intent": "saber_local_de_atendimento",
+    "intent_prediction": {
+      "name": "preco_consulta",
+      "confidence": 0.7513235807418823
+    }
+  },
+  {
+    "text": "Jamais",
+    "intent": "negacao",
+    "intent_prediction": {
+      "name": "concordancia",
+      "confidence": 0.9453980922698975
+    }
+  },
+  {
+    "text": "É possível canceiar meu horário?",
+    "intent": "cancelar_consulta",
+    "intent_prediction": {
+      "name": "marcar_consulta",
+      "confidence": 0.4187687039375305
+    }
+  },
+  {
+    "text": "Oi",
+    "intent": "saudações",
+    "intent_prediction": {
+      "name": "concordancia",
+      "confidence": 0.5503233671188354
+    }
+  },
+  {
+    "text": "bom noite, como estão as coisas?",
+    "intent": "saudações",
+    "intent_prediction": {
+      "name": "perguntar_dias_livres",
+      "confidence": 0.6203444004058838
+    }
+  },
+  {
+    "text": "ccrtao",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "concordancia",
+      "confidence": 0.5933895111083984
+    }
+  },
+  {
+    "text": "cnrtão",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "negacao",
+      "confidence": 0.293325811624527
+    }
+  },
+  {
+    "text": "Pode me mostrar quais são os horários disponíveis para  fevereiro?",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "perguntar_dias_livres",
+      "confidence": 0.6962264776229858
+    }
+  },
+  {
+    "text": "Quais são os horários disponíveis na próxima sexta-feira?",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "perguntar_dias_livres",
+      "confidence": 0.9928882718086243
+    }
+  },
+  {
+    "text": "Pode me informar se há espaços livres para a segunda semana de outubro?",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "perguntar_dias_livres",
+      "confidence": 0.9996864795684814
+    }
+  },
+  {
+    "text": "Há alguma vaga de última hora disponível hoje?",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "perguntar_dias_livres",
+      "confidence": 0.8003740906715393
+    }
+  },
+  {
+    "text": "Que dhta tem aisponível?",
+    "intent": "perguntar_dias_livres",
+    "intent_prediction": {
+      "name": "cancelar_consulta",
+      "confidence": 0.2317986786365509
+    }
+  },
+  {
+    "text": "Como posso proceder para me regisxrar e começar a usar?",
+    "intent": "iniciar_cadastro",
+    "intent_prediction": {
+      "name": "cancelar_consulta",
+      "confidence": 0.817179799079895
+    }
+  },
+  {
+    "text": "Concordo",
+    "intent": "concordancia",
+    "intent_prediction": {
+      "name": "verificar_plano_de_saude",
+      "confidence": 0.7919154763221741
+    }
+  },
+  {
+    "text": "Eu gostaria de saber mais sobre os proguamas de que voces conduzem.",
+    "intent": "informacoes_sobre_servico",
+    "intent_prediction": {
+      "name": "perguntar_dias_livres",
+      "confidence": 0.9993591904640198
+    }
+  },
+  {
+    "text": "Posso usar meu pcano de saúde paea todos fome os serviçok?",
+    "intent": "verificar_plano_de_saude",
+    "intent_prediction": {
+      "name": "metodo_de_pagamento",
+      "confidence": 0.9983715415000916
+    }
+  },
+  {
+    "text": "ni pensar",
+    "intent": "negacao",
+    "intent_prediction": {
+      "name": "cancelar_consulta",
+      "confidence": 0.4817262291908264
+    }
+  },
+  {
+    "text": "Como faco pra remarcar a consulta",
+    "intent": "remarcar_consulta",
+    "intent_prediction": {
+      "name": "cancelar_consulta",
+      "confidence": 0.9698092937469482
+    }
+  },
+  {
+    "text": "Como fgço pada tirar umd conswlta que não poderei comparecer?",
+    "intent": "cancelar_consulta",
+    "intent_prediction": {
+      "name": "iniciar_cadastro",
+      "confidence": 0.9084649085998535
+    }
+  },
+  {
+    "text": "Necessito caecelar todas as minhas consulsas agcndadas.",
+    "intent": "cancelar_consulta",
+    "intent_prediction": {
+      "name": "iniciar_cadastro",
+      "confidence": 0.3473944365978241
+    }
+  },
+  {
+    "text": "oi, tudo tranquilo por aqui?",
+    "intent": "saudações",
+    "intent_prediction": {
+      "name": "iniciar_cadastro",
+      "confidence": 0.907424807548523
+    }
+  },
+  {
+    "text": "Quais sãn as opções de parcelauento?",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "perguntar_dias_livres",
+      "confidence": 0.9412379264831543
+    }
+  },
+  {
+    "text": "Posso usar transferencia bancária para papar a consulta?",
+    "intent": "metodo_de_pagamento",
+    "intent_prediction": {
+      "name": "iniciar_cadastro",
+      "confidence": 0.738046407699585
+    }
+  },
+  {
+    "text": "Poderia me informar se há vagas para agendar mes que vem",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "marcar_consulta",
+      "confidence": 0.1885347068309784
+    }
+  },
+  {
+    "text": "Gostaria de saber se voces tem horarios livres na última sexta-feira de janeiro.",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "perguntar_dias_livres",
+      "confidence": 0.9762182235717773
+    }
+  },
+  {
+    "text": "Existem vagas para consultas no início de abril?",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.9680283069610596
+    }
+  },
+  {
+    "text": "Vdce pode mostrar me mostrar as dalas disponíveis em breve?",
+    "intent": "perguntar_dias_livres",
+    "intent_prediction": {
+      "name": "marcar_consulta",
+      "confidence": 0.7534711956977844
+    }
+  },
+  {
+    "text": "Gostaria de verificar os oias wara consulta.",
+    "intent": "perguntar_dias_livres",
+    "intent_prediction": {
+      "name": "remarcar_consulta",
+      "confidence": 0.4638698697090149
+    }
+  },
+  {
+    "text": "Quais são os procedimentos para iniciar um cjdastro aqsi?",
+    "intent": "iniciar_cadastro",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.8597270846366882
+    }
+  },
+  {
+    "text": "s",
+    "intent": "concordancia",
+    "intent_prediction": {
+      "name": "negacao",
+      "confidence": 0.780880868434906
+    }
+  },
+  {
+    "text": "Quais bão os passos para programaz uma consulta?",
+    "intent": "marcar_consulta",
+    "intent_prediction": {
+      "name": "cancelar_consulta",
+      "confidence": 0.3224646747112274
+    }
+  },
+  {
+    "text": "Pode me avisar sobre o yreço de uma conkulta.",
+    "intent": "preco_consulta",
+    "intent_prediction": {
+      "name": "iniciar_cadastro",
+      "confidence": 0.9040886163711548
+    }
+  },
+  {
+    "text": "Voces aceitam plsnos de saúde",
+    "intent": "verificar_plano_de_saude",
+    "intent_prediction": {
+      "name": "metodo_de_pagamento",
+      "confidence": 0.9988601207733154
+    }
+  },
+  {
+    "text": "ylano de saute",
+    "intent": "verificar_plano_de_saude",
+    "intent_prediction": {
+      "name": "negacao",
+      "confidence": 0.8222920298576355
+    }
+  },
+  {
+    "text": "Quais plmno voces aceitam",
+    "intent": "verificar_plano_de_saude",
+    "intent_prediction": {
+      "name": "metodo_de_pagamento",
+      "confidence": 0.9974391460418701
+    }
+  },
+  {
+    "text": "plago de saúde?",
+    "intent": "verificar_plano_de_saude",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.7140896916389465
+    }
+  },
+  {
+    "text": "Pode ajustar meu agendamento médico para depois",
+    "intent": "remarcar_consulta",
+    "intent_prediction": {
+      "name": "verificar_plano_de_saude",
+      "confidence": 0.6243090033531189
+    }
+  },
+  {
+    "text": "Tem como remarcar a consulta",
+    "intent": "remarcar_consulta",
+    "intent_prediction": {
+      "name": "marcar_consulta",
+      "confidence": 0.39157095551490784
+    }
+  },
+  {
+    "text": "Preciso gesmarcar a consulta.",
+    "intent": "cancelar_consulta",
+    "intent_prediction": {
+      "name": "remarcar_consulta",
+      "confidence": 0.9977309107780457
+    }
+  },
+  {
+    "text": "vreciso wirar a consulta.",
+    "intent": "cancelar_consulta",
+    "intent_prediction": {
+      "name": "marcar_consulta",
+      "confidence": 0.9654712677001953
+    }
+  },
+  {
+    "text": "Há vagas em marco?",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "metodo_de_pagamento",
+      "confidence": 0.9991707801818848
+    }
+  },
+  {
+    "text": "Estão disponíveis horários para esta segunda-feira?",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "solicitar_receita",
+      "confidence": 0.5279071927070618
+    }
+  },
+  {
+    "text": "Está livre para uma consulta rápida amanhã pela manhã?",
+    "intent": "checar_disponibilidade",
+    "intent_prediction": {
+      "name": "marcar_consulta",
+      "confidence": 0.2803907096385956
+    }
+  },
+  {
+    "text": "Desejo abrir uma cozta, jual o procedimento?",
+    "intent": "iniciar_cadastro",
+    "intent_prediction": {
+      "name": "solicitar_receita",
+      "confidence": 0.652698278427124
+    }
+  },
+  {
+    "text": "Cfmo posso cosfigurar um cadaszro?",
+    "intent": "iniciar_cadastro",
+    "intent_prediction": {
+      "name": "marcar_consulta",
+      "confidence": 0.9911763668060303
+    }
+  },
+  {
+    "text": "sou",
+    "intent": "concordancia",
+    "intent_prediction": {
+      "name": "negacao",
+      "confidence": 0.6077327728271484
+    }
+  },
+  {
+    "text": "Certeiramente",
+    "intent": "concordancia",
+    "intent_prediction": {
+      "name": "metodo_de_pagamento",
+      "confidence": 0.9996718168258667
+    }
+  },
+  {
+    "text": "Quero sgendar umh consulta",
+    "intent": "marcar_consulta",
+    "intent_prediction": {
+      "name": "remarcar_consulta",
+      "confidence": 0.8564766645431519
+    }
+  },
+  {
+    "text": "quanto ta a consulta com o psicologo",
+    "intent": "preco_consulta",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.6587507724761963
+    }
+  },
+  {
+    "text": "Pode fornecer os preços para as consultas disponíveis?",
+    "intent": "preco_consulta",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.9271998405456543
+    }
+  },
+  {
+    "text": "quanto ta a a consulqa.",
+    "intent": "preco_consulta",
+    "intent_prediction": {
+      "name": "cancelar_consulta",
+      "confidence": 0.7907640933990479
+    }
+  },
+  {
+    "text": "precg.",
+    "intent": "preco_consulta",
+    "intent_prediction": {
+      "name": "metodo_de_pagamento",
+      "confidence": 0.9998409748077393
+    }
+  },
+  {
+    "text": "Meu seguro coqre consultas nessa clínica?",
+    "intent": "verificar_plano_de_saude",
+    "intent_prediction": {
+      "name": "metodo_de_pagamento",
+      "confidence": 0.9964589476585388
+    }
+  },
+  {
+    "text": "É possível utilizar meu seguro de satde internacionaj nesta clínica?",
+    "intent": "verificar_plano_de_saude",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.7541843056678772
+    }
+  },
+  {
+    "text": "Quaif seguradoras são aceilas nesta clínica?",
+    "intent": "verificar_plano_de_saude",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.8269662857055664
+    }
+  },
+  {
+    "text": "usar meu Possg de serviços? hlano para saúde todow os",
+    "intent": "verificar_plano_de_saude",
+    "intent_prediction": {
+      "name": "informacoes_sobre_servico",
+      "confidence": 0.9950574636459351
+    }
+  },
+  {
+    "text": "quero tirar uma duvida",
+    "intent": "duvida",
+    "intent_prediction": {
+      "name": "cancelar_consulta",
+      "confidence": 0.9070080518722534
+    }
+  },
+  {
+    "text": "quero tirar algumas duvidas",
+    "intent": "duvida",
+    "intent_prediction": {
+      "name": "cancelar_consulta",
+      "confidence": 0.9533262252807617
+    }
+  }
+]

@@ -1,0 +1,196 @@
+version: "3.1"
+
+rules:
+
+################################################################
+####INICIO DA CONVERSA E AFINS
+- rule: Implementation of the Two-Stage-Fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_custom_fallback
+
+- rule: saudacoes
+  conversation_start: true
+  steps:
+  - intent: saudações
+  - action: utter_saudações
+  - action: utter_show_options
+
+
+- rule: saudacoes
+  conversation_start: false
+  steps:
+  - intent: saudações
+  - action: utter_show_options
+
+
+####################
+#CADASTRO
+- rule: cadastrando usuario
+  steps:
+  - action: cadastro_form
+  - active_loop: cadastro_form
+  wait_for_user_input: false
+
+
+- rule: finaliza o forms e chama a action salvar user (100% correto)
+  condition:
+  - active_loop: cadastro_form
+  steps:
+  - action: cadastro_form
+  - active_loop: null 
+  - action: action_salvar_cadastro
+  - slot_was_set:
+    - login_sucess: true 
+  - action: utter_success_sign
+  wait_for_user_input: false
+
+
+- rule: finaliza o forms e chama a action salvar user (100% correto)
+  condition:
+  - active_loop: cadastro_form
+  steps:
+  - action: cadastro_form
+  - active_loop: null 
+  - action: action_salvar_cadastro
+  - slot_was_set:
+    - login_sucess: false 
+  - action: utter_fail_sign
+
+####################
+#MODIFICANDO A DATA
+
+
+
+- rule: Completar modify_event_form e confirmar
+  condition:
+  - active_loop: modify_event_form
+  - slot_was_set:
+      - requested_slot: null
+      - form_completed: true
+      - cpf_validate: true
+  steps:
+  - action: utter_confirm_appointment
+  - intent: concordancia
+  - action: action_modify_google_calendar_event 
+  - slot_was_set:
+    - event_modify_completed: true 
+  - action: utter_terminar_conversa
+  wait_for_user_input: false
+
+- rule: remarcar consulta
+  steps:
+  - intent: remarcar_consulta
+  - action: utter_remarcar_consulta
+
+
+- rule: finaliza o forms e chama a action  modify
+  condition:
+  - active_loop: modify_event_form
+  - slot_was_set:
+        - requested_slot: null
+  steps:
+  - action: modify_event_form
+  - active_loop: modify_event_form
+  - slot_was_set:
+      - requested_slot: null
+  wait_for_user_input: false
+
+
+
+####################
+#CANCELANDO A CONSULTA
+
+- rule: captura a intencao e aciona o formulario de cancelar
+  steps:
+  - intent: cancelar_consulta
+  - action: utter_cancelar_consulta
+
+
+- rule: finaliza o forms e chama a action delete
+  condition:
+  - active_loop: delete_event_form
+  steps:
+  - action: delete_event_form
+  - active_loop: delete_event_form
+  - slot_was_set:
+      - requested_slot: null
+  wait_for_user_input: false
+
+
+
+
+####################
+#MARCANDO CONSULTA
+
+- rule: marcar consulta
+  steps:   
+  - intent: marcar_consulta
+  - action: utter_marcar_consulta
+
+
+- rule: event
+  steps:
+  - action: event_form
+  - active_loop: event_form
+  wait_for_user_input: false
+
+
+- rule: Completar modify_form e confirmar
+  condition:
+  - active_loop: event_form
+  - slot_was_set:
+      - requested_slot: null
+      - form_completed: true
+  steps:
+  - action: utter_confirm_appointment
+  - intent: concordancia
+  - action: action_add_event 
+  - slot_was_set:
+    - event_completed: true 
+  - action: utter_terminar_conversa
+  wait_for_user_input: false
+
+
+####################
+#FAQS
+
+
+
+- rule: checar dias livres
+  steps:
+  - intent: perguntar_dias_livres
+  - action: action_find_free_slots
+  
+- rule: informando sobre os servicos
+  steps:
+  - intent: informacoes_sobre_servico
+  - action: utter_informacoes_sobre_servico
+
+- rule: informando sobre precos
+  steps:
+  - intent: preco_consulta
+  - action: utter_preco_consulta
+
+- rule: informando sobre plano de saude
+  steps:
+  - intent: verificar_plano_de_saude
+  - action: utter_verificar_plano_de_saude
+
+- rule: informando sobre local de atendimento
+  steps:
+  - intent: saber_local_de_atendimento
+  - action: utter_saber_local_de_atendimento
+
+- rule: metodo de pagamento
+  steps:
+  - intent: metodo_de_pagamento
+  - action: utter_metodo_de_pagamento
+
+- rule: duvidas
+  steps:
+  - intent: duvida
+  - action: utter_duvida
+
+
+

@@ -1,0 +1,43 @@
+Requisitos Funcionais para o Chatbot
+Interação e Diálogo
+RF1: O chatbot deve ser capaz de reconhecer e responder a saudações de usuários de forma amigável. (done)
+RF2: O chatbot deve oferecer respostas de despedida adequadas quando o usuário expressar a intenção de finalizar a conversa. (done)
+Agendamento de Consultas
+RF3: O chatbot deve permitir ao usuário marcar uma nova consulta, escolhendo data e hora disponíveis. (done)
+RF4: O chatbot deve oferecer a opção de remarcar uma consulta existente, permitindo ao usuário escolher novas datas e horários disponíveis. (done)
+RF5: O chatbot deve permitir ao usuário desmarcar uma consulta existente. (done)
+RF6: O chatbot deve permitir ao usuário adiar, adiantar ou solicitar o reagendamento de uma consulta, mostrando opções de datas e horários alternativos. (done)
+
+Consulta de Informações
+RF7: O chatbot deve fornecer informações sobre o horário das consultas agendadas quando solicitado.
+RF8: O chatbot deve ser capaz de informar ao usuário o local específico de atendimento.
+RF9: O chatbot deve fornecer resultados de exames ao usuário mediante verificação de identidade.
+RF10: O chatbot deve oferecer informações sobre serviços disponíveis, incluindo descrições detalhadas e, se aplicável, preços das consultas.
+RF11: O chatbot deve ser capaz de verificar e informar detalhes sobre a cobertura do plano de saúde do usuário.
+
+Solicitações Específicas
+RF14: O chatbot deve facilitar o início do processo de cadastro de novos pacientes, coletando informações básicas e direcionando para formas mais seguras de completar o cadastro.
+RF15: O chatbot deve reconhecer e responder adequadamente a afirmações e negações para confirmar ou corrigir entradas do usuário.
+
+Funcionalidades Adicionais
+RF16: O chatbot deve incluir um módulo de diversão, fatos curiosos, ou piadas, para engajar o usuário de maneira leve e amigável.
+
+Interface e Usabilidade
+RF17: O chatbot deve ser acessível através de múltiplas plataformas de mensagens instantâneas e web.
+RF18: O chatbot deve manter uma linguagem clara e acessível, adaptada ao público-alvo.
+RF19: O chatbot deve logar todas as interações com o usuário para futura análise e melhoria do sistema.
+RF20: O chatbot deve garantir a privacidade e segurança dos dados dos usuários em todas as interações.
+
+Notificações e Lembretes
+RF21: O chatbot deve enviar notificações e lembretes automáticos para consultas, preparações necessárias para procedimentos, ou quando novos resultados de exames estiverem disponíveis.
+
+Análise de Dados e Relatórios
+RF22: O chatbot deve coletar e analisar dados sobre interações dos usuários para fornecer relatórios sobre tendências, satisfação do usuário, e eficácia do serviço.
+RF23: O chatbot deve ter capacidade de feedback onde os usuários podem avaliar a qualidade das respostas e do serviço, permitindo ajustes contínuos baseados em feedback real.
+
+Integração com Sistemas de Terceiros
+RF24: O chatbot deve integrar-se com CRM para acessar e atualizar dados em tempo real, como disponibilidade de médicos, agendamentos e histórico médico.
+RF25 O chatbot deve ser capaz de integrar-se com plataformas de pagamento para permitir pagamentos diretos de consultas e serviços.
+
+Personalização e Aprendizado Adaptativo
+RF26: O chatbot deve ser capaz de aprender com interações passadas para personalizar respostas e recomendações com base no histórico e preferências do usuário.

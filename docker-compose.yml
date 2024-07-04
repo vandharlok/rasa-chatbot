@@ -1,0 +1,56 @@
+services:
+  rasa:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "5005:5005"
+      - "5055:5055"
+    depends_on:
+      - duckling
+      - backend
+      - db
+      - frontend
+
+    environment:
+      - DATABASE_URL=postgresql://vanderson:Love13Skate06Boarding2002desdemeno@db:5432/chatbot
+  
+    
+    
+  duckling:
+    image: rasa/duckling
+    ports:
+      - "8000:8000"
+
+  backend:
+    build: ../backend-chat
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../backend-chat:/app
+    environment:
+      - NODE_ENV=production
+      - PG_HOST=db
+      - PG_PORT=5432
+      - PG_USER=vanderson
+      - PG_PASSWORD=Love13Skate06Boarding2002desdemeno
+      - PG_DATABASE=chatbot
+
+  frontend:
+    build: ../frontend
+    ports:
+      - "3001:80"
+  
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: vanderson
+      POSTGRES_PASSWORD: Love13Skate06Boarding2002desdemeno
+      POSTGRES_DB: chatbot
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:

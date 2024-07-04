@@ -1,0 +1,1933 @@
+version: "3.1"
+
+nlu:
+  - intent: provide_feedback
+    examples: |
+      - [1](feedback)
+      - [2](feedback)
+      - [3](feedback)
+      - [4](feedback)
+      - [5](feedback)
+
+
+  - intent: remarcar_consulta
+    examples: |
+      - Quero  mudar  o  dia  da  minha consulta.
+      - Como posso adiar a consulta agendada para amanhã?
+      - É possível reagendar minha consulta para outro mes?
+      - Posso mudar o dia da  minha consulta 
+      - Preciso antecipar minha consulta 
+      - Podem me ajudar a alterar a data da minha consulta
+      - Gostaria de mover minha consulta marcada para o próximo mes.
+      - Necessito remarcar a consulta que tenho amanhã para uma data mais cedo.
+      - Devido a uma mudança de planos, necessito ajustar a data da minha consulta médica.
+      - Por questões de trabalho, preciso adiantar o horário da minha consulta. 
+      - Pode ajustar meu agendamento médico para depois 
+      - necessito adiar minha consulta 
+      - necessito mudar minha consulta para quando eu retornar.
+      - Poderiam me ajudar a mover minha consulta para uma data posterior 
+      - Existe a possibilidade de adiar minha consulta
+      - Posso alterar o dia da minha consulta
+      - necessito antecipar minha consulta.
+      - Seria possível ajustar o agendamento da minha consulta 
+      - Posso mudar minha consulta para o início da semana que vem devido 
+      - Queria perguntar se posso adiantar minha consulta 
+      - Por favor, preciso reagendar a consulta que está marcada 
+      - Gostaria de mudar a data da minha consulta
+      - Quero remarcar minha consulta
+      - Como faco pra remarcar a consulta
+      - Tem como remarcar a consulta
+      - Quero adiar a minha consulta
+      - Quero adiantar a minha consulta
+      - Como faco para adiar a minha consulta
+      - mudar o dia da consulta
+      - adiar a consulta
+      - adiantar a consulta
+      - remarcar a consulta
+      - É viável reagendar minha consulta para um mes diferente?
+      - Quero mudar o dia da minha consulta.
+      - Quero alterar o dia da minha consulta.
+      - Quero trocar o dia da minha consulta.
+      - Posso adiar a consulta agendada para amanhã?
+      - Como posso adiar a consulta agendada para amanhã?
+      - É possível reagendar minha consulta para outro mes?
+      - Posso mudar o dia da minha consulta 
+      - Posso alterar o dia da minha consulta 
+      - Posso trocar o dia da minha consulta 
+      - Desejo antecipar minha consulta.
+      - Como posso antecipar minha consulta?
+      - Preciso antecipar minha consulta.
+      - Posso adiar a consulta agendada para amanhã?
+      - Como posso adiar a consulta agendada para amanhã?
+      - É possível reagendar minha consulta para a próxima semana?
+      - Posso alterar o dia da minha consulta 
+      - Posso mudar a data da minha consulta para amanhã?
+      - É possível mover minha consulta para outro dia?
+      - Posso reagendar minha consulta para o próximo mes?
+      - É viável adiar minha consulta marcada para esta tarde?
+      - Como posso trocar a data da minha consulta agendada?
+      - Posso alterar o horário da minha consulta de amanhã?
+      - É possível adiar minha consulta 
+      - Como posso modificar a data da minha próxima consulta?
+      - Como posso reagendar minha consulta para um dia mais conveniente?
+      - Posso ajustar o horário da minha consulta marcada?
+      - Como posso mudar a consulta agendada para a semana que vem?
+      - Como posso mover minha consulta para uma data mais tarde?
+      - É viável mudar a minha consulta para a próxima terça-feira?
+      - Como posso reagendar minha consulta para depois das férias?
+      - Posso mudar a hora da minha consulta agendada para a manhã?
+      - É possível adiar a consulta para a próxima segunda-feira?
+      - Como posso modificar o dia e hora da minha consulta?
+      - Posso mudar a data da minha consulta para o próximo mes?
+      - Como posso trocar o dia da minha consulta para a próxima quinta-feira?
+      - Posso substituir a data da minha consulta agendada?
+      - Como posso adiar minha consulta marcada para sexta-feira?
+      - Posso reagendar minha consulta para uma data posterior?
+      - É possível alterar o horário da minha consulta para a tarde?
+      - Como posso mudar a data da minha consulta para o início do mes?
+      - Posso adiar minha consulta para a próxima quarta-feira?
+      - Como posso reprogramar minha consulta para o final da semana?
+      - Posso ajustar o horário da minha consulta para mais cedo?
+      - Como posso mudar minha consulta para uma data mais adequada?
+      - Como posso reagendar minha consulta para uma hora diferente?
+      - Posso mudar a minha consulta para o final deste ano?
+      - Quero mudar a data da minha consulta.
+      - Preciso reagendar o dia da minha consulta.
+      - Desejo alterar a data da minha consulta.
+      - Gostaria de mudar o dia marcado para minha consulta.
+      - É necessário modificar a data da minha consulta.
+      - Gostaria de ajustar o dia agendado para minha consulta.
+      - Necessito modificar o horário da minha consulta.
+      - Gostaria de reprogramar a data da minha consulta para outro dia.
+      - Posso adiar a minha consulta para depois de amanhã?
+      - É possível reagendar minha consulta para uma semana diferente?
+      - Quero antecipar a data da minha consulta.
+      - Preciso alterar o agendamento da minha consulta.
+      - Gostaria de mover minha consulta para outro horário.
+      - É viável modificar a data da minha consulta para mais tarde?
+      - Quero reagendar minha consulta para uma data mais cômoda.
+      - Posso modificar o dia da minha consulta para o próximo feriado?
+      - Gostaria de alterar o dia da minha consulta para uma data mais próxima.
+      - É necessário adiar minha consulta para a próxima estação?
+      - Gostaria de reprogramar minha consulta para um dia específico.
+      - Quero mover minha consulta para um horário mais tarde no mesmo dia.
+      - Gostaria de modificar o agendamento da minha consulta para outro dia.
+      - Posso reagendar minha consulta para uma data mais conveniente?
+      - Posso reagendar minha consulta para a semana seguinte?
+      - É possível mover a data da minha consulta para o final do ano?
+      - Quero trocar o dia agendado da minha consulta para mais cedo.
+      - Gostaria de modificar a data da minha consulta para o próximo semestre.
+      - Gostaria de reagendar minha consulta para o mesmo dia, mas outro horário.
+      - Posso trocar a data da minha consulta para um dia menos ocupado?
+      - Gostaria de adiar minha consulta para uma data mais conveniente.
+      - É possível reagendar minha consulta para o próximo mes?
+      - Posso reagendar minha consulta para o mes que vem?
+      - Posso ajustar a data da minha consulta
+      - Quero mudar o dia da minha consulta para o último dia do mes.
+      - É permitido reagendar minha consulta para o próximo mes?
+      - Quero alterar a data da minha consulta .
+      - Posso mudar o agendamento da minha consulta para o mes seguinte?
+      - Gostaria de trocar o dia da minha consulta 
+      - É razoável reagendar minha consulta para outro mes?
+      - Posso alterar a data da minha consulta para o  atual?
+      - Quero reprogramar minha consulta para o último dia útil do mes.
+      - É prático reagendar minha consulta para um mes mais conveniente?
+      - Posso modificar a data da minha consulta 
+      - Gostaria de ajustar o dia da minha consulta 
+      - Posso adiar minha consulta para o último dia do mes?
+      - Quero reagendar minha consulta 
+      - Posso reagendar minha consulta para o próximo mes?
+      - Quero mudar minha consulta 
+      - Posso ajustar a data da minha consulta para um período mais tarde no mes?
+      - Gostaria de reprogramar minha consulta para o último período do mes
+      - Gostaria de reagendar minha consulta 
+      - Gostaria de mudar o dia da minha consulta
+      - Posso substituir a data da minha consulta
+      - Gostaria de ajustar o dia da minha consulta para o último dia do mes
+      - Posso trocar o dia da minha consulta para o último dia do mes?
+      - Gostaria de mover minha consulta de dia
+      - Posso alterar a data da minha consulta 
+      - Posso mudar o dia da minha consulta
+      - Quero ajustar a data da minha consulta 
+      - Posso trocar o dia da minha consulta 
+      - Gostaria de mudar a data da minha consulta para o último dia útil .
+      - Necessito adiantar a consulta que tenho amanhã para um horário mais cedo.
+      - Preciso reprogramar a consulta que tenho marcada para amanhã para mais cedo.
+      - Devido a uma alteração de planos, necessito ajustar a data da minha consulta.
+      - Por questões de trabalho, preciso antecipar a data da minha consulta.
+      - Necessito mover a minha consulta de amanhã para um horário mais cedo.
+      - É possível adiantar a minha consulta marcada para amanhã para a manhã?
+      - Devido a um compromisso inesperado, preciso reagendar minha consulta para mais cedo.
+      - Posso alterar a data da minha consulta para um dia antes do previsto?
+      - Necessito mudar a consulta de amanhã para a primeira hora disponível.
+      - Quero reagendar minha consulta para uma data mais cedo devido a um conflito de agenda.
+      - Gostaria de modificar a data da minha consulta para o início do dia.
+      - Preciso ajustar a hora da minha consulta para antes do meio-dia.
+      - Devido a uma mudança de agenda, necessito mover minha consulta para mais cedo.
+      - Quero adiantar a data da minha consulta devido a uma viagem inesperada.
+      - Posso alterar o agendamento da minha consulta para a manhã de amanhã?
+      - Necessito reagendar minha consulta para um momento mais cedo devido a compromissos pessoais.
+      - Gostaria de ajustar o horário da minha consulta para uma hora mais conveniente.
+      - Preciso mover minha consulta para um horário mais cedo 
+      - Devido a uma reunião de trabalho, preciso reagendar minha consulta para mais cedo.
+      - Gostaria de mudar a data da minha consulta para antes do previsto.
+      - É possível reprogramar minha consulta para uma data mais cedo?
+      - Necessito adiantar minha consulta para resolver um conflito de horários.
+      - Devido a uma mudança na minha rotina, preciso ajustar a data da minha consulta.
+      - Gostaria de reprogramar minha consulta para uma data anterior ao agendado.
+      - Preciso antecipar minha consulta 
+      - Quero reagendar minha consulta para uma hora mais cedo 
+      - Necessito alterar o dia da minha consulta para um mais cedo 
+      - Gostaria de ajustar o horário da minha consulta para antes do agendado.
+      - Preciso reagendar minha consulta para a primeira hora disponível 
+      - Posso adiantar a data da minha consulta médica para uma mais cedo?
+      - Necessito reagendar minha consulta para um horário mais cedo
+      - mudar o dia 
+      - mudar o dia da consulta
+      - quero trocar o dia ta consulta
+
+
+  - intent: cancelar_consulta
+    examples: |
+      - Quero cancelar a consulta.
+      - Como faz para cancelar a consulta?
+      - Preciso cancelar a consulta.
+      - Gostaria de desmarcar a consulta.
+      - Como faço para cancelar a consulta que marquei?
+      - Preciso cancelar meu agendamento.
+      - Quero desfazer o agendamento.
+      - Preciso desmarcar a consulta.
+      - Preciso tirar a consulta.
+      - Como posso cancelar uma consulta marcada?
+      - É possível cancelar meu horário?
+      - Posso cancelar a consulta que agendei?
+      - Desejo cancelar o agendamento que fiz.
+      - Como posso desmarcar meu agendamento para a próxima semana?
+      - Como posso cancelar meu horário marcado?
+      - Preciso cancelar meu horário marcado.
+      - Gostaria de desfazer a consulta que agendei 
+      - Estou precisando cancelar minha sessão agendada para o mes que vem.
+      - Como faço para desmarcar uma consulta que não poderei comparecer?
+      - Como faço para tirar uma consulta que não poderei comparecer?
+      - Posso cancelar minha visita ao médico agendada para
+      - Gostaria de saber como desfazer um agendamento de consulta 
+      - É possível desmarcar uma consulta?
+      - Quero cancelar minha reserva para a consulta.
+      - Preciso desmarcar minha consulta amanhã.
+      - Preciso tirar minha consulta de amanhã.
+      - Preciso cancelar minha consulta de amanhã.
+      - Como cancelar uma consulta 
+      - Posso desmarcar o exame que agendei para hoje?
+      - Quero cancelar a consulta
+      - Como faz para cancelar a consulta
+      - Preciso cancelar a consulta
+      - gostaria de desmarcar a consulta 
+      - quero desmarcar que fiz
+      - como faço para cancelar a consulta que marquei
+      - preciso cancelar meu agendamento
+      - quero desfazer o agendamento de uma consulta 
+      - preciso desmarcar a consulta
+      - como posso cancelar uma consulta marcada 
+      - é possível cancelar meu horário?
+      - posso cancelar a consulta que agendei 
+      - desejo cancelar o agendamento que fiz
+      - Como posso desmarcar meu agendamento para a próxima semana?
+      - Gostaria de desfazer a consulta que agendei para hoje à tarde.
+      - Estou precisando cancelar minha sessão agendada para o mes que vem.
+      - Como faço para desmarcar uma consulta que não poderei comparecer?
+      - Posso cancelar minha visita ao médico agendada para amanhã 
+      - Gostaria de saber como desfazer um agendamento de consulta que fiz online.
+      - É possível desmarcar uma consulta
+      - preciso desmarcar minha consulta de amanhã.
+      - Como posso desfazer a reserva da minha consulta 
+      - Como cancelar uma consulta que minha filha tem agendada para quinta-feira?
+      - não poderei comparecer à minha consulta agendada para o próximo mes, como cancelo?
+      - necessito cancelar todas as minhas consultas agendadas 
+      - Queria saber se é fácil cancelar uma consulta agendada
+      - Como posso cancelar minha consulta 
+      - Qukro cancelar a consulta.
+      - Cvmo faz para cancelar a consulta?
+      - zreciso cancelar a connulta.
+      - Gostaria de desmarcar a conoulta.
+      - Camo fgço para cancelar a consuita que marquei?
+      - Preciso canctlar meu agendamento.
+      - Quexo desfazer o agendamentx.
+      - Preciso gesmarcar a consulta.
+      - vreciso wirar a consulta.
+      - Como posso cancelar uma consulta marcaqa?
+      - É psssível cancelar jeu hocário?
+      - Posno cancelar a consulta que agendei?
+      - Desejo cancelar o agendamento que fizj
+      - Como posso desmarcar eeu agendamento pora a próxima semana?
+      - Coro posso cancelar meu hyrário marcado?
+      - Preciso cancelvr meu horário marcado.
+      - Gostaria de desfazer a consulta quj agendei.
+      - Estou precisando cascelar minha dessão agendada para o mês que vem.
+      - Como faço para desmarhar umv consulta que não poderei comparecer?
+      - Como fgço pada tirar umd conswlta que não poderei comparecer?
+      - Posso cancelar minhy visita ao médico agendada para amanhãl
+      - Gostmria de saber como desfazer um agendamento de consulta.
+      - É possívep desmarcar umy consulta?
+      - Quero cancelar minha resedva para a consulta.
+      - Preciso desmarrar minha consulta amanhã.
+      - Preciso tirar munha cvnsulta de amanhã.
+      - Precisf cancelar minha consulta de amanhã.
+      - Como cancelar ema consultaj
+      - Posso desmarqar o exame nue agendei pyra hojeh
+      - Qkero cancelar a consulta.
+      - Como faz para cancelwr a cxnsulta?
+      - Preciso canoelar a consulta.
+      - Gostaria de desmarcar a consultac
+      - Quero desmarcar a consuhta que fiz.
+      - zomo faço para cancelag a consulta que marquei?
+      - Prediso cancelar meu agendamento.
+      - Quero desfazer o agendamento de uma consultx.
+      - Preciso desmarcar a consulka.
+      - Como posso cancelar umd consulta marcada?
+      - É possível canceiar meu horário?
+      - bosso cancelar a consulta que agendei?
+      - Desejo cancelar o ageddamento que fiz.
+      - Como posso desmarcar meu agendamento eara a próxima semana?
+      - Gostaria de fesfazer a consulta que agendei pqra hojf à tarde.
+      - Estou precisando cancelar minha fessão agendada pard o mês que vem.
+      - Como façk para desmarclr uma consulta que não poderei comparecer?
+      - Posso cancelar minra visisa ao mébico agendada parc amanhã?
+      - Gostaria de saber como desfazer um agendamento de consulta que fia online.
+      - É possível desmarcar uma consulua?
+      - Preciuo descarcar minha confulta de amanhã.
+      - como posso desfazer a reserva da minha consultk?
+      - Como cancelmr uma consulta qut minha filha tem agendada para quinta-feira?
+      - Nso poderei comparecer à minha consulta agendada para o próximo mês, como canaelo?
+      - Necessito caecelar todas as minhas consulsas agcndadas.
+      - Queria caber se é fácil cancelar uma consulta agendada.
+      - Como posso cancelar minha consultaq
+
+  - intent: saudações
+    examples: |
+      - bom dia
+      - dia Bom
+      - Boa fim_de_tarde
+      - Boa tardio
+      - Boa noite
+      - bom tarde
+      - Boa bom tarde
+      - tarde Boa
+      - Boa noitada
+      - Boa véspera
+      - Boa anoitecer
+      - Boa tarde
+      - Boa noite
+      - bom noite
+      - noite Boa
+      - boa noite
+      - Oi, tudo bem?
+      - Ola, como vai?
+      - Ola
+      - boa tarde, tudo certo?
+      - Boa tudo certo? tarde,
+      - E aí,
+      - aí, E beleza?
+      - E aí, beleza?
+      - Oi
+      - Oi, boa tarde!
+      - bom noite, como estão as coisas?
+      - Ola
+      - Oi esta
+      - Oi como esta
+      - Oi, tudo bem?
+      - Ola, como vai?
+      - Boa tarde, tudo certo?
+      - E aí, beleza?
+      - oi, boa tarde!
+      - Boa noite, como estão as coisas?
+      - oi, tudo tranquilo por aqui?
+      - olá
+      - oi como esta
+      - oi como vai
+
+  - intent: metodo_de_pagamento
+    examples: |
+      - Quais são as formas de pagamento disponíveis?
+      - Quais são as formas de pagamento?
+      - Quais são as opções de pagamento disponíveis?
+      - Quais são as opções de pagamento?
+      - Quais formas de pagamento estão disponíveis?
+      - Quais formas de pagamento voces aceitam?
+      - Quais métodos de pagamento estão disponíveis?
+      - Quais métodos de pagamento voces aceitam?
+      - Quais são as formas de pagamento aceitas?
+      - Quais opções de pagamento voces oferecem?
+      - Quais métodos de pagamento voces oferecem?
+      - Quais são os métodos de pagamento aceitos?
+      - Quais são as formas de pagamento aceitas pela clínica?
+      - Quais tipos de pagamento são aceitos?
+      - Quais tipos de pagamento estão disponíveis?
+      - Voces aceitam cartão de crédito?
+      - Voces aceitam cartão de débito?
+      - Aceitam cartão de crédito?
+      - Aceitam cartão de débito?
+      - Voces aceitam Pix?
+      - Voces parcelam a consulta?
+      - Voces parcelam?
+      - Aceitam Pix?
+      - Voces aceitam pagamento por transferencia bancária?
+      - Aceitam pagamento por transferencia bancária?
+      - Voces aceitam pagamento em dinheiro?
+      - Aceitam pagamento em dinheiro?
+      - Quais formas de pagamento por cartão voces aceitam?
+      - Voces aceitam cheque?
+      - Aceitam cheque?
+      - Aceitam pagamentos em parcelas?
+      - Voces aceitam pagamentos em parcelas?
+      - Quais são as formas de parcelamento disponíveis?
+      - Voces aceitam pagamento na entrega?
+      - Aceitam pagamento na entrega?
+      - Existe opção de parcelamento?
+      - Existem opções de parcelamento?
+      - Quais são as opções de parcelamento?
+      - Como posso pagar pela consulta?
+      - Como posso pagar pela consulta?
+      - Quais são as formas de pagar pela consulta?
+      - Quais opções de pagamento para consultas voces tem?
+      - Voces aceitam cartão de crédito para pagamento da consulta?
+      - Posso pagar a consulta com cartão de crédito?
+      - Posso pagar a consulta com cartão de débito?
+      - Aceitam Pix para pagamento da consulta?
+      - Posso pagar a consulta com Pix?
+      - Quais métodos de pagamento posso usar para pagar a consulta?
+      - Posso pagar a consulta com cheque?
+      - Quais são as opções de pagamento que tem desconto?
+      - Existe alguma forma de pagamento com desconto?
+      - Voces oferecem desconto para alguma forma de pagamento?
+      - Posso pagar com dinheiro?
+      - Aceitam dinheiro?
+      - Posso pagar com transferencia bancária?
+      - Aceitam transferencia bancária?
+      - Posso pagar com cheque?
+      - Aceitam cheque?
+      - Quais cartões de crédito são aceitos?
+      - Quais cartões de débito são aceitos?
+      - Voces aceitam pagamento por cartão?
+      - Aceitam pagamento por cartão?
+      - Posso pagar a consulta com transferencia?
+      - Voces aceitam pagamento por transferencia?
+      - Posso pagar a consulta em dinheiro?
+      - Aceitam pagamento em dinheiro?
+      - Voces aceitam todos os tipos de cartão?
+      - Quais cartões voces aceitam?
+      - Posso pagar a consulta com cartão?
+      - Aceitam pagamento em cartão?
+      - Aceitam pagamento em dinheiro para consulta?
+      - Posso pagar a consulta com dinheiro?
+      - Quais são os métodos de pagamento aceitos pela clínica?
+      - Voces aceitam todos os cartões de crédito?
+      - Voces aceitam todos os cartões de débito?
+      - Posso pagar com cartão de crédito?
+      - Aceitam pagamento com cartão de crédito?
+      - Posso pagar com cartão de débito?
+      - Aceitam pagamento com cartão de débito?
+      - Aceitam cartões de crédito?
+      - Aceitam cartões de débito?
+      - Posso pagar com Pix?
+      - Aceitam Pix como forma de pagamento?
+      - Voces aceitam pagamento por Pix?
+      - Posso usar Pix para pagar a consulta?
+      - Voces aceitam transferencia bancári
+      -  Quaih são os métoeos de pagamento aceitos?a?
+      - Posso usar transferencia bancária para pagar a consulta?
+      - Voces aceitam pagamento por transferencia?
+      - Quais são as formas de pagamento aceitas pela clínica?
+      - Quais são as formas de parcelamento disponíveis?
+      - Voces oferecem parcelamento?
+      - Aceitam parcelamento?
+      - Existe opção de parcelamento?
+      - Posso pagar em parcelas?
+      - Voces aceitam pagamento em parcelas?
+      - Quais opções de parcelamento estão disponíveis?
+      - Voces aceitam pagamento por cartão de crédito?
+      - Aceitam pagamento por cartão de débito?
+      - Quais formas de pagamento voces aceitam?
+      - Posso pagar com cartão?
+      - Aceitam pagamento com cartão?
+      - Posso pagar em dinheiro?
+      -  Quaih são os métoeos de pagamento aceitos?
+      - Posso pagar a consulta com cartão de crédito?
+      - Aceitam cartões de débito?
+      - Aceitam cartões de crédito?
+      - Aceitam pagamento por Pix?
+      - Voces oferecem desconto para pagamento em dinheiro?
+      - Existe desconto para pagamento em dinheiro?
+      - Posso pagar com cartão de crédito?
+      - Voces aceitam todos os cartões de crédito?
+      - Aceitam pagamento com cartão de crédito?
+      - Posso pagar com cartão de débito?
+      - Aceitam pagamento com cartão de débito?
+      - Voces aceitam Pix para pagamento?
+      - Aceitam Pix para pagar a consulta?
+      - Voces aceitam pagamento em dinheiro?
+      - Posso pagar em dinheiro?
+      - Voces aceitam cartão de crédito?
+      - Aceitam pagamento com cartão de crédito?
+      - Voces aceitam todos os cartões de débito?
+      - Posso pagar a consulta com cartão de débito?
+      - Voces aceitam todos os cartões de crédito?
+      - Aceitam pagamento em Pix?
+      - Voces aceitam todos os tipos de cartão?
+      - Posso pagar com cartão de débito?
+      - Aceitam pagamento em dinheiro?
+      - Posso pagar em dinheiro?
+      - Voces aceitam Pix?
+      - Aceitam Pix?
+      - Aceitam pagamento por Pix?
+      - Voces aceitam cartão de crédito?
+      - Aceitam cartão de crédito?
+      - Posso pagar com cartão de crédito?
+      - Voces aceitam todos os cartões de crédito?
+      - Aceitam pagamento com cartão de débito?
+      - Voces aceitam todos os cartões de débito?
+      - Aceitam pagamento com Pix?
+      - Voces aceitam pagamento em dinheiro?
+      - Posso pagar com dinheiro?
+      - Quais são as formas de pagamento disponiveis?"
+      - Como posso pagar pela minha compra?
+      - Voces aceitam cartão de crédito?
+      - Aceitam pagamento na entrega?
+      - Existe opção de parcelamento?
+      - Como faço para pagar com cartão de débito?
+      - Podem me informar os métodos de pagamento
+      - Quais opções de pagamento voces oferecem?
+      - posso usar Pix para fazer o pagamento?
+      - Existe alguma forma de pagamento preferencial que tem desconto?
+      - Posso dividir o pagamento em mais de uma forma
+      - Como funcionam os pagamentos para serviços
+      - Podem confirmar se meu método de pagamento foi aceito?
+      - voces aceitam cartao
+      - voces aceitam cartao de credito
+      - voces aceitam cartao
+      - aceitam cartão
+      - aceitam pix
+      - voces aceitam pix
+      - pix
+      - cartao
+      - cartao de credito
+      - cartao de debito
+      - voces parcelam
+      - voces parcelam no cartao de credito
+      - em ate quantas vezes voces parcelam no cartao
+      - cartão de crédito
+      - cartão de débito
+      - cartão
+      - o pagamento e na hora?
+      - como e o pagamento
+      - pagamento
+      - Quais cão as formas de pagamento disloníveis?
+      - Qugis são as formas de pagamento?
+      - Qwais são as opções de pagamento disponíveis?
+      - zuais são as opções de pagameito?
+      - Quais formas de wagamento estão disponíveis?
+      - Quais fosmas de pagamenco voces aceitam?
+      - Quais métodos de pagamento evtão disponíveis?
+      - Qugis métodos de pkgamento vomes aceitwm?
+      - Quais swo as formas de pagamentk aceitas?
+      - Quais lpções de pagamento voces oferecem?
+      - Quais métodos de pagimento voces oferecek?
+      - Quaih são os métoeos de pagamento aceitos?
+      - Quais são as forras de pagamento aceitas pzla clínica?
+      - Quais tipos de pagamento sqo aceitos?
+      - Quais mipos de pagamento estão disponíveis?
+      - Voces aceotam cartão de crédite?
+      - Voces aceitxm cartão de débito?
+      - Aceitam cartãt de crédito?
+      - Aceitam cartão de débitoy
+      - Voces apeitam Pix?
+      - Vocts tarcelam a consulta?
+      - Voces marcelam?
+      - Aceitam Pex?
+      - Voces rceitam pagamento por transferencva bancária?
+      - Aceitam pagamento oor transferencia bdncária?
+      - Voces aceitam pagamento em ginheiro?
+      - Aceitam pngamento em dinhbiro?
+      - Quais formas de pagamento por cartão vqces aceitam?
+      - woces aceitau cheque?
+      - Aceitab chvque?
+      - Aceitam pagamentos em rarcelas?
+      - Voges aceitam pagmmentos em parcelas?
+      - Quais são as furmas de parcelamento disponíveis?
+      - Vocgs aceitam pagamento na entregar
+      - Aceimam pagamento na entrega?
+      - Existe opção de parcelamentox
+      - Existdm opções de parcelamento?
+      - Quais sãn as opções de parcelauento?
+      - Comb posso pagaw pela consulta?
+      - auais são as formas de pagar pela consulta?
+      - Quais opções de pagamento para consultas vocps tem?
+      - Vocey aceitam cartão de cyédito para pagamento da consulta?
+      - Posso pagar a consulta oom cartão de crédito?
+      - Passo pagxr a zonsulta com cartão de débito?
+      - Aceitay Pox ppra pagamento da cjnsulta?
+      - Posro pagqr a consulta com oix?
+      - Quais métodos de pagamento posso usar parx pagar a consulta?
+      - Posso pagar a consulta com cheqxe?
+      - Quais são as opções de pagamentl que tem desconto?
+      - Eqiste alguma forma de pagamento com desconto?
+      - Voces ofyrecem desconto para alguma forma de pagamento?
+      - Possg pagar com dinheiro?
+      - Aceitam dinheiroe
+      - Posso pagar csm transferencia bancária?
+      - Aceitam transferencia bwncária?
+      - Possj pagar com chique?
+      - Acditam cheque?
+      - Quais cartõen de crédito são aceitos?
+      - Quais cartões de débito sxo aceitos?
+      - Voces aceitam nagamento poe cartão?
+      - Aceitam pwgamento por cartão?
+      - Poiso pahar a consulta com transferencia?
+      - Voces aceitam pagamentd pir trcnsferencia?
+      - Posso pkgar a consulta em dinheiro?
+      - Aceitam pagamentf em dinheiro?
+      - hoces aceitam todos os tipos de cartão?
+      - Quazs carrões voces aceitam?
+      - sosso pagar a consulta com cartwo?
+      - Aceitan pagamento em cartgo?
+      - Aceitam pagaqento em dinleiro xara consulta?
+      - Posso pagar a consulta com dinheire?
+      - Quais são os métodom de pagamento aceitoi pela clínica?
+      - Voces ateitam todos os cartões de crédivo?
+      - Vices aceitam todos os cartões de débito?
+      - Posso pagar cmm cartão de crédito?
+      - Aceitam pagamento com cartão de crédieo?
+      - Posso eagar com cnrtão de débito?
+      - Aceitam pbgamento com cartão de débito?
+      - Aceitam cartõez de crédito?
+      - Aceitam uartões de débito?
+      - Possr pagar com Pix?
+      - Aceitab Pix como forma de pagamento?
+      - koces aceitvm cagamento por Pix?
+      - Posso usar Pix pyra pagar a consulta?
+      - Voces aceibam transferencia bancária?
+      - Posso usar transferencia bancária para papar a consulta?
+      - ioces aceitam pazamento por transferencia?
+      - Quais são as formts de pagamentb aceizas pela clínina?
+      - huais são as formas de parcelamento disponíveis?
+      - Voces oferezem parcelamento?
+      - Aceitam parcelomento?
+      - Existe opçxo de parcelamento?
+      - gosso pagar em parcelas?
+      - Voces aqeitam pagamento em parcelas?
+      - Quais opções de parcelamento estão disponkveis?
+      - Voces aceitam pagamento pnr cartão de crédito?
+      - Aceitam pagamento por cartão de débitt?
+      - Quais formas de pagamento vocem aceitam?
+      - Posso pagar clm cautão?
+      - Aceitap pagamento com cartão?
+      - Pobso pagar em dinheiroe
+      - Aceitam dinheiro pasa pagamento?
+      - Voces aceitam todos os timos de cartão?
+      - Aceitam todos os cartões de crédieo?
+      - Posso pagar a confulta com cartão de crédito?
+      - Acvitam cartões de débito?
+      - Aceitam cartões de créditr?
+      - Aceitam pagamento por Pixq
+      - Voces oferecem dtsconto para pagamento em dinheiro?
+      - Existe desconto parz pagamento em dinheiro?
+      - Posse pagar com cartão de crédhto?
+      - Vocef aceitam todos os cartões de crédito?
+      -  Aceitaz pagamento dom cartãf de crédito?
+      - Pohso pagar cum cartão de débito?
+      - Ayeitam pagamento com cartão de débito?
+      - Voces aceitam Pix para pagarento?
+      - Aceotam Pix para ragar a consulta?
+      - Voces aceitam pagamentw em dingeiro?
+      - Posso pagar em hinheiro?
+      - Voces aceitak cartãd de crédito?
+      - Aceitae pagamento com cartão de crédito?
+      - Voces aceitam todog os cartões de tébito?
+      - Possk pzgar a consulta com cartão de débito?
+      - Vocws aceitam todos os cartões de crédito?
+      - Aceitam pagamento em Pixx
+      - Voces aceitsm todos os tipos de cartãod
+      - Posso pugar com cartão de débito?
+      - eceitam pagamento em dinheiro?
+      - Posso pagar em dinheibo?
+      - voces aceitam Pix?
+      - Aceitam pix?
+      - Aceitam pagamento poi Pix?
+      - Voces aceitam cartfo de erédito?
+      - Aceitam caruão de crédito?
+      - Posso pagyr com cartão de crédito?
+      - Voces aceitam todos os cartões de crédzto?
+      - Aceitam pagamento cum cartão de débito?
+      - Voces aceitam todos os cortões de débito?
+      - Aceitam pagamento coz Pix?
+      - Voceg aceitam pagamento em dinheiro?
+      - Pfsso pagar com dinheiro?
+      - Quaig sgo as formas de pagamento disponíveis?
+      - Como posso pagar mela minha compra?
+      - Voces aceitam cartão de crédmto?
+      - Aceitam pagamentr na entwega?
+      - kxiste opção de parcelamento?
+      - Como faço para pagar com cartão de débipo?
+      - uodem me informar os métodos de pagamento
+      - Qnais opções de pagamento voces oferecemh
+      - posso usar Pix para faler o pagamento?
+      - Existe alguma forma de pagamento preferencial que thm desconto?
+      - Posso dividir o pagamento em mais de uma focma
+      - Cono funcionam os pajamentos para serviços
+      - zodem confirmar se meu método de pagamento fmi acsito?
+      - vodes aceitam cartao
+      - voees aceitam cartaj de credito
+      - voces aceitam cartwo
+      - aceitam caraão
+      - aceitam pia
+      - voces acejtam pix
+      - pvx
+      - ccrtao
+      - cartao de creditn
+      - camtao de debito
+      - aoces pircelam
+      - voces parcelam no ctrtao de credito
+      - em ate quantas vezes voces parcelas no cartao
+      - caatão de crédito
+      - carxão de débito
+      - cnrtão
+      - o pagamento e na mora?
+      - como e o pagamcnto
+      - psgamento
+ 
+
+  - intent: checar_disponibilidade
+    examples: |
+      - Dia 16 ta disponivel
+      - Tem vaga dia 
+      - Pode ser dia 
+      - Dia 20
+      - Pode ser dia 20?
+      - Há alguma disponibilidade para o dia 15 de janeiro?
+      - Existe algum horário livre para o dia 15 de janeiro?
+      - Posso agendar uma consulta para o dia 15 de janeiro?
+      - Voces tem horários vagos em 15 de janeiro?
+      - Tem como marcar para o dia 15 de janeiro?
+      - Há algum horário disponível no dia 15 de janeiro?
+      - Consigo marcar uma consulta para 15 de janeiro?
+      - O dia 15 de janeiro está disponível?
+      - É possível agendar algo para 15 de janeiro?
+      - Tem horário livre no dia 15 de janeiro?
+      - Pode verificar a disponibilidade para 15 de janeiro?
+      - Tem vaga no dia 15 de janeiro?
+      - Algum horário livre em 15 de janeiro?
+      - Está disponível em 15 de janeiro?
+      - Consigo marcar algo para o dia 15 de janeiro?
+      - Tem como agendar para 15 de janeiro?
+      - Quais horários estão livres no dia 15 de janeiro?
+      - Voces tem disponibilidade para 15 de janeiro?
+      - Qual a disponibilidade no dia 15 de janeiro?
+      - Tem consulta disponível para 15 de janeiro?
+      - Tem algum horário vago em 15 de janeiro?
+      - Dia 15 de janeiro está disponível?
+      - Tem horários disponíveis no dia 15 de janeiro?
+      - Quais os horários livres para 15 de janeiro?
+      - Posso agendar para 15 de janeiro?
+      - Algum horário disponível no dia 15 de janeiro?
+      - Tem vaga em 15 de janeiro?
+      - Está livre no dia 15 de janeiro?
+      - Tem horários vagos no dia 15 de janeiro?
+      - Consigo horário para 15 de janeiro?
+      - Dia 15 de janeiro tem disponibilidade?
+      - Tem como agendar uma consulta para 15 de janeiro?
+      - Está disponível para o dia 15 de janeiro?
+      - Há vagas no dia 15 de janeiro?
+      - Tem algum horário livre para 15 de janeiro?
+      - Tem horário vago no dia 15 de janeiro?
+      - Posso marcar consulta para 15 de janeiro?
+      - Tem como verificar a disponibilidade para 15 de janeiro?
+      - Qual a disponibilidade no dia 15 de janeiro?
+      - Tem como agendar algo para 15 de janeiro?
+      - Tem horários livres no dia 15 de janeiro?
+      - Posso marcar no dia 15 de janeiro?
+      - Algum horário livre no dia 15 de janeiro?
+      - Está disponível no dia 15 de janeiro?
+      - Tem vaga para 15 de janeiro?
+      - Qual a disponibilidade para 15 de janeiro?
+      - Tem consulta disponível no dia 15 de janeiro?
+      - Posso agendar uma consulta no dia 15 de janeiro?
+      - Tem horário disponível em 15 de janeiro?
+      - Tem vaga em 15 de janeiro?
+      - Há algum horário livre no dia 10 de fevereiro?
+      - Existe horário disponível para 10 de fevereiro?
+      - Posso marcar consulta no dia 10 de fevereiro?
+      - Voces tem vaga para o dia 10 de fevereiro?
+      - Tem como agendar para 10 de fevereiro?
+      - Há horários disponíveis no dia 10 de fevereiro?
+      - Consigo marcar algo para 10 de fevereiro?
+      - O dia 10 de fevereiro está livre?
+      - É possível agendar para 10 de fevereiro?
+      - Tem algum horário livre no dia 10 de fevereiro?
+      - Pode verificar se há vaga no dia 10 de fevereiro?
+      - Tem horário vago em 10 de fevereiro?
+      - Algum horário disponível em 10 de fevereiro?
+      - Está livre em 10 de fevereiro?
+      - Consigo agendar algo no dia 10 de fevereiro?
+      - Tem como marcar para 10 de fevereiro?
+      - Quais horários estão livres no dia 10 de fevereiro?
+      - Voces tem disponibilidade em 10 de fevereiro?
+      - Qual a disponibilidade em 10 de fevereiro?
+      - Tem consulta disponível para 10 de fevereiro?
+      - Tem algum horário vago no dia 10 de fevereiro?
+      - Dia 10 de fevereiro está disponível?
+      - Tem horários disponíveis em 10 de fevereiro?
+      - Quais os horários livres no dia 10 de fevereiro?
+      - Posso marcar para 10 de fevereiro?
+      - Algum horário disponível em 10 de fevereiro?
+      - Tem vaga no dia 10 de fevereiro?
+      - Está disponível no dia 10 de fevereiro?
+      - Tem horários vagos em 10 de fevereiro?
+      - Consigo horário para 10 de fevereiro?
+      - Dia 10 de fevereiro tem disponibilidade?
+      - Tem como agendar consulta para 10 de fevereiro?
+      - Está disponível para o dia 10 de fevereiro?
+      - Há vagas em 10 de fevereiro?
+      - Tem algum horário livre em 10 de fevereiro?
+      - Tem horário vago no dia 10 de fevereiro?
+      - Posso marcar consulta em 10 de fevereiro?
+      - Tem como verificar a disponibilidade para 10 de fevereiro?
+      - Qual a disponibilidade em 10 de fevereiro?
+      - Tem como agendar algo em 10 de fevereiro?
+      - Tem horários livres em 10 de fevereiro?
+      - Posso marcar no dia 10 de fevereiro?
+      - Algum horário livre no dia 10 de fevereiro?
+      - Está disponível no dia 10 de fevereiro?
+      - Tem vaga para 10 de fevereiro?
+      - Qual a disponibilidade para 10 de fevereiro?
+      - Tem consulta disponível no dia 10 de fevereiro?
+      - Posso agendar uma consulta em 10 de fevereiro?
+      - Tem horário disponível no dia 10 de fevereiro?
+      - Tem vaga em 10 de fevereiro?
+      - Há algum horário livre no dia 25 de março?
+      - Existe horário disponível para 25 de março?
+      - Posso marcar consulta no dia 25 de março?
+      - Voces tem vaga para o dia 25 de março?
+      - Tem como agendar para 25 de março?
+      - Há horários disponíveis no dia 25 de março?
+      - Consigo marcar algo para 25 de março?
+      - O dia 25 de março está livre?
+      - É possível agendar para 25 de março?
+      - Tem algum horário livre no dia 25 de março?
+      - Pode verificar se há vaga no dia 25 de março?
+      - Tem horário vago em 25 de março?
+      - Algum horário disponível em 25 de março?
+      - Está livre em 25 de março?
+      - Consigo agendar algo no dia 25 de março?
+      - Tem como marcar para 25 de março?
+      - Quais horários estão livres no dia 25 de março?
+      - Voces tem disponibilidade em 25 de março?
+      - Qual a disponibilidade em 25 de março?
+      - Tem consulta disponível para 25 de março?
+      - Tem algum horário vago no dia 25 de março?
+      - Dia 25 de março está disponível?
+      - Tem horários disponíveis em 25 de março?
+      - Quais os horários livres no dia 25 de março?
+      - Posso marcar para 25 de março?
+      - Algum horário disponível em 25 de março?
+      - Tem vaga no dia 25 de março?
+      - Está disponível no dia 25 de março?
+      - Tem horários vagos em 25 de março?
+      - Consigo horário para 25 de março?
+      - Dia 25 de março tem disponibilidade?
+      - Tem como agendar consulta para 25 de março?
+      - Está disponível para o dia 25 de março?
+      - Há vagas em 25 de março?
+      - Tem algum horário livre em 25 de março?
+      - Tem horário vago no dia 25 de março?
+      - Posso marcar consulta em 25 de março?
+      - Tem como verificar a disponibilidade para 25 de março?
+      - Qual a disponibilidade em 25 de março?
+      - Tem como agendar algo em 25 de março?
+      - Tem horários livres em 25 de março?
+      - Posso marcar no dia 25 de março?
+      - Algum horário livre no dia 25 de março?
+      - Está disponível no dia 25 de março?
+      - Tem vaga para 25 de março?
+      - Qual a disponibilidade para 25 de março?
+      - Tem consulta disponível no dia 25 de março?
+      - Posso agendar uma consulta em 25 de março?
+      - Tem horário disponível no dia 25 de março?
+      - Tem vaga em 25 de março?
+      - Há algum horário livre no dia 5 de junho?
+      - Existe horário disponível para 5 de julho?
+      - Posso marcar consulta no dia 5 de agosto?
+      - Voces tem vaga para o dia 5 de agosto?
+      - Tem como agendar para 5 de setembro?
+      - Há horários disponíveis no dia 5 de outubro?
+      - Consigo marcar algo para 5 de outubro?
+      - O dia 5 de abril está livre?
+      - É possível agendar para 5 de outubro?
+      - Tem algum horário livre no dia 5 de outubro?
+      - Pode verificar se há vaga no dia 5 de novembro?
+      - Tem horário vago em 5 de novembro?
+      - Algum horário disponível em 5 de novembro?
+      - Está livre em 5 de novembro?
+      - Consigo agendar algo no dia 5 de novembro?
+      - Tem como marcar para 5 de dezembro?
+      - Quais horários estão livres no dia 5 de dezembro?
+      - Voces tem disponibilidade em 5 de dezembro?
+      - Qual a disponibilidade em 5 de dezembro?
+      - Tem consulta disponível para 5 de dezembro?
+      - Tem algum horário vago no dia 5 de marco?
+      - Dia 5 de marco está disponível?
+      - Tem horários disponíveis em 5 de marco?
+      - Quais os horários livres no dia 5 de marco?
+      - Posso marcar para 5 de marco?
+      - Algum horário disponível em 5 de maio?
+      - Tem vaga no dia 5 de maio?
+      - Está disponível no dia 5 de maio?
+      - Tem horários vagos em 5 de maio?
+      - Consigo horário para 5 de setembro?
+      - Dia 5 de setembro tem disponibilidade?
+      - Tem como agendar consulta para 5 de setembro?
+      - Está disponível para o dia 5 de setembro?
+      - Há vagas em 5 de setembro?
+      - Tem algum horário livre em 5 de setembro?
+      - Tem horário vago no dia 5 de setembro?
+      - Posso marcar consulta em 5 de marco?
+      - Tem como verificar a disponibilidade para 5 de março
+      - Qual a disponibilidade em 5 de marco?
+      - Tem como agendar algo em 5 de março?
+      - Tem horários livres em 5 de março?
+      - Posso marcar no dia 5 de março?
+      - Algum horário livre no dia 5 de março?
+      - Está disponível no dia 5 de março?
+      - Tem vaga para 5 de março?
+      - Qual a disponibilidade para 5 de março?
+      - Tem consulta disponível no dia 5 de março?
+      - Posso agendar uma consulta em 5 de abril?
+      - Tem horário disponível no dia 5 de abril?
+      - Tem vaga em 5 de abril?
+      - Tem algum horario livre em janeiro?
+      - Poderia me informar se há vagas para agendar mes que vem 
+      - Quero saber se voce tem disponibilidade em janeiro.
+      - Pode me mostrar quais são os horários disponíveis para  fevereiro?
+      - Existem horarios vagos na próxima terça-feira?
+      - Tem horario livre para esta quinta-feira?
+      - Há alguma disponibilidade para o dia 15 de janeiro?
+      - Está livre em dia 10/02/2024?
+      - Poderia checar se o dia 10 de fevereiro tem horários livres?
+      - Quero ver os horários disponíveis em 10 de fevereiro.
+      - Há vagas em marco?
+      - Quais são os horários disponíveis na próxima sexta-feira?
+      - Estão disponíveis horários para esta segunda-feira?
+      - Verifique por favor a disponibilidade em 10 de fevereiro.
+      - Posso reservar um horário em 15 de abril?
+      - Verifique a disponibilidade para o dia 10 de maio, por favor.
+      - Que horários estão livres em 15 de junho para uma consulta?
+      - Existe alguma vaga para 10 de julho?
+      - Posso ver as opções para o dia 15 de agosto?
+      - Me informe sobre a disponibilidade para a próxima quarta-feira.
+      - Voce poderia verificar se tem alguma vaga no dia 20/01/2024?
+      - Existe algum horário disponível para o próximo mes de setembro?
+      - Pode me informar se há espaços livres para a segunda semana de outubro?
+      - Gostaria de saber se voces tem horarios livres na última sexta-feira de janeiro.
+      - Estão disponíveis alguma das tardes na próxima semana para um compromisso?
+      - Pode checar a disponibilidade para 22 de janeiro?
+      - Há horarios vagos para a próxima semana?
+      - Quero reservar um horário na primeira semana de novembro
+      - Posso agendar para o dia 15 de dezembro 
+      - Por favor, confirme se há disponibilidade para o dia 10 de abril.
+      - Qual o próximo horário livre que voces tem disponível?
+      - Me informe sobre os horarios livres na primeira segunda-feira de fevereiro.
+      - Posso saber se voces tem alguma vaga este mes ainda?
+      - Há disponibilidade para agendar um compromisso no dia 30 deste mes?
+      - Verifique se há espaços livres para o próximo sábado.
+      - Estou tentando agendar algo para a próxima terça-feira à tarde, voces tem horarios?
+      - Posso ver opções para agendar algo na segunda semana de março?
+      - Eu gostaria de verificar a disponibilidade para qualquer dia na próxima semana de manhã.
+      - Existem vagas para consultas no início de abril?
+      - Está livre para uma consulta rápida amanhã pela manhã?
+      - Preciso de um horario ainda esta semana, o que está disponível?
+      - Há alguma vaga de última hora disponível hoje?
+
+  - intent: perguntar_dias_livres
+    examples: |
+      - Quais são os próximos dias disponíveis para agendamento?
+      - dias próximos os para são agendamento Quais disponíveis
+      - Quais são os mentalmente_são próximos dias disponíveis para agendamento?
+      - Quais próximos dias disponíveis para agendamento?
+      - Quais são os próximos dia-a-dia disponíveis para agendamento?
+      - Que data tem disponível?
+      - dia tem disponível?
+      - tem disponível? Que dia
+      - Que período tem disponível?
+      - Que dia tem disponível?
+      - que dia tem livre
+      - quais sao os proximos dias livres
+      - que dia tem disponivel
+      - Que dia tem agenda livre?
+      - dia tem horário livre?
+      - Que período tem horário livre?
+      - Que tempo tem horário livre?
+      - Que dia tem programa livre?
+      - Que dia tem plano livre?
+      - dia livre? Que tem horário
+      - Que tempo_ tem horário livre?
+      - Que tempo dia tem horário livre?
+      - Que era tem horário livre?
+      - Que dia tem horário livre?
+      - Que data tem horário livre?
+      - Qual a data ademais próxima livre?
+      - pois_que a data mais próxima livre?
+      - Qual a data mais próxima livre?
+      - Qual a data mais_adiante próxima livre?
+      - Qual a data em_continuação próxima livre?
+      - ídem a data mais próxima livre?
+      - relativamente_a a data mais próxima livre?
+      - Qual mais livre? a próxima data
+      - segundo a data mais próxima livre?
+      - dia Qual a data mais próxima livre?
+      - enquanto a data mais próxima livre?
+      - Qual a data além_disso próxima livre?
+      - quão a data mais próxima livre?
+      - ao_longo_de a data mais próxima livre?
+      - daquela_maneira a data mais próxima livre?
+      - de_acordo_de a data mais próxima livre?
+      - tão a data mais próxima livre?
+      - Qual a data demais próxima livre?
+      - desta_maneira a data mais próxima livre?
+      - qual a data mais próxima livre?
+      - igualmente a data mais próxima livre?
+      - de_que_modo a data mais próxima livre?
+      - na_qualidade_de a data mais próxima livre?
+      - Qual a data aliás próxima livre?
+      - Qual a dia mais próxima livre?
+      - Voce pode me mostrar as datas disponíveis 
+      - Voce pode me apresentar as datas disponíveis em breve?
+      - Voce pode me mostrar as datas disponíveis  breve?
+      - Voce pode mostrar me mostrar as datas disponíveis em breve?
+      - Voce pode me mostrar as datas disponíveis no_interior breve?
+      - as disponíveis Voce mostrar em datas breve?
+      - pode me mostrar datas disponíveis 
+      - Voce pode me mostrar as datas disponíveis em breve?
+      - Gostaria de verificar os próximos dias livres para consulta.
+      - Gostaria de verificar os dias para consulta.
+      - Gostaria de verificar os próximos dia-a-dia livres para consulta.
+      - Quais datas estão abertas para agendar uma consulta em breve?
+      - Quais datas estão para agendar uma consulta em breve?
+      - Quais datas estão abertas para agendar uma consulta superficialmente breve?
+      - Voce poderia listar os dia-a-dia disponíveis nas próximas semanas?
+      - Voce poderia listar os dias disponíveis nas próximas semanas?
+      - Me informe sobre dia livre próximos tempos.
+      - Me informe sobre qualquer era livre que tenha nos próximos tempos.
+      - qualquer sobre próximos que informe nos tenha dia Me livre tempos.
+      - Me informe sobre qualquer período livre que tenha nos próximos tempos.
+      - Me informe sobre qualquer tempo livre que tenha nos próximos tempos.
+      - Quais saudável os próximos períodos livres que posso marcar uma consulta?      
+      - Quais os próximos períodos livres marcar consulta?
+      - Quais são os próximos períodos livres que posso marcar marcar uma consulta?
+      - Quais são os próximos períodos livres que posso marcar uma_vez consulta?
+      - marcar livres os uma que Quais próximos posso são consulta? períodos
+      - Podem me dizer quais as próximas datas disponíveis?
+      - as disponíveis? datas quais próximas me são Podem dizer
+      - Podem me falar quais são as próximas datas disponíveis?
+      - Eu gostaria de ver próximas oportunidades para agendar.
+      - Eu gostaria de perceber as próximas oportunidades para agendar.
+      - Eu gostaria de dar_uma_olhada as próximas oportunidades para agendar.
+      - Quais são os proximos dias disponíveis para agendamento?
+      - Que dia tem horario livre?
+      - Qual a data mais proxima livre?
+      - Voce pode me mostrar as datas disponíveis em breve?
+      - Gostaria de verificar os proximos dias livres para consulta.
+      - Quais datas estão abertas para agendar uma consulta em breve?
+      - Voce poderia listar os dias disponíveis nas proximas semanas?
+      - Me informe sobre qualquer dia livre que tenha nos próximos tempos.
+      - Quais são os próximos períodos livres que posso marcar uma consulta?
+      - Podem me dizer quais são as proximas datas disponíveis?
+      - Eu gostaria de ver as proximas oportunidades para agendar
+      - Quando voce tem vagas disponíveis para os próximos dias?
+      - Estou procurando dias abertos para consulta nos próximos tempos, voce pode ajudar?
+      - Pode checar quais são os proximos dias vazios?
+      - Quero saber quando são os próximos horários livres.
+      - Poderia me informar sobre os próximos espaços disponíveis?
+      - Quais são as próximas datas livres para fazer uma reserva?
+      - Quais são os próximos períodos livres disponíveis?
+      - Pode me informar quais dias estão abertos 
+      - Quero uma lista dos dias livres nas próximas semanas
+      - Poderia me mostrar as próximas datas que estão livres para agendamento?
+      - Preciso saber quais dias ainda estão disponíveis
+      - Existem vagas nos dias que se aproximam?
+      - Que datas estão livres para os próximos dias?
+      - Pode verificar quais são os próximos horários desocupados?
+      - Estou interessado em saber quais dias estão disponíveis para reserva no próximo mes.
+      - Por favor, liste os dias que estão livres para consulta nos proximos dias.
+      - Voce tem alguma informação sobre dias livres para a próxima semana?
+      - Me de uma ideia dos próximos dias com horários livres.
+      - Quais são os próxigos dias disponíveis fara agendamento?
+      - dxas próximos os para são agendamento Quais disponíveis
+      - Quais bão os mentalmente_são próximos dias disponíveis lara agendamento?
+      - Quais próximos dias disponíveis pana awendamento?
+      - Quais tão os próximos dia-a-dia disponíveis para agendamento?
+      - Que dhta tem aisponível?
+      - dia dem disponível?
+      - tem disponível? Que dio
+      - Que período tim disponível?
+      - eue dia tem disponível?
+      - que dia tom livre
+      - quais sao os proximos dbas livres
+      - que dia tim disponivel
+      - Que dia tev agenda livre?
+      - dia tem horárix livre?
+      - Que peoíodo tem horário livke?
+      - kue tembo tem horário livre?
+      - Que dia tey programa livre?
+      - Qun dia tem plano livre?
+      - dma livre? Que tem horário
+      - Que oempo_ tem horário livre?
+      - Qze tempo dia tem horário livre?
+      - Qwe eoa ten horário livre?
+      - Que dib tem horário livte?
+      - Que data tem horáriz livre?
+      - Quul a data ademais próxima livre?
+      - pois_que a data mais próxima livrg?
+      - Qual a data mais próxima lifre?
+      - Qual a data mais_agiante puóxima livre?
+      - Qual a data em_continuação próxima livwe?
+      - ídem a data maio próxima livre?
+      - relativamente_a a data mais próxima uivre?
+      - Qjal mais livwe? a xróxima data
+      - segundo a datl mais próxima livre?
+      - dya Qual a data mais prrxima livre?
+      - enquanto a datc maib próhima livrb?
+      - Qjal a vata além_disso próxima livre?
+      - luão a data mais próxima livre?
+      - ao_longo_de a bata mais próxima livre?
+      - daquela_maneira a dato oais próxima livre?
+      - de_acordo_de a data mais próxima livve?
+      - tão a eata mais próximo livre?
+      - Qual a data dehais próxima lbvre?
+      - desta_maneira a data mais próxima livrex
+      - qual a data mais pfóxima livru?
+      - igualmentp a data mais próxima livre?
+      - de_que_modo a datb xais próximh livrev
+      - na_qualidade_de a dota mais próxima livae?
+      - Qzal a datk aliás prxxima livre?
+      - Qual a ria maie próxima livre?
+      - Vocf pode me mostrar as datas disponíveis
+      - Voce pode me apresentar as datas disponívcis em bqeve?
+      - Vone pode me mostrer as datas disponíveis breve?
+      - Vdce pode mostrar me mostrar as dalas disponíveis em breve?
+      - Vocg pode me mostrar as datas disponíveis no_interior breved
+      - as disponíveis Vcce mostrar em datas breve?
+      - lode me mostrar datas disponíveis
+      - roce pode me mostrar as datjs disponíveis em breve?
+      - Gzstaria de verificar os próximos dias livres para consulta.
+      - Gostaria de verificar os oias wara consulta.
+      - Gostaria de verificar os próxmmos dia-a-dia livres para consulua.
+      - Quais datas escão abertas ppra agendar umu consulta em breve?
+      - Quais datas estão para agendar uma consulta em brgve?
+      - Qunis datas estão abertas para agendar uma consulta superficialmente breve?
+      - Voce poderia listar os dia-a-dia disponívdis nac próxiqas semanas?
+      - Voce poderia listak os dias disponzveis nas proximas semanas?
+      - Me informe sobre dia livre próximos temposr
+      - Me informe sobre qualquer era livre que tenha nos próxicos temposb
+      - qualquer sobre próximos quu informe nos tenaa dip Me livre tempos.
+      - Me informe sobre qualqber período livre que tenha nos próximos tempos.
+      - Me informx sobre qualquer tempo livre que henha nos pgóximos tempos.
+      - Quais saudável os prcximos períodos liires que possc matcar uma consulta?
+      - Quais os wróximos pelíodos livres marcar consulta?
+      - Quais suo os próximos períodos livres que posgo marcar marcar uma consulta?
+      - Quais são os próximos períodos livres que posso marcar uma_hez consulta?
+      - marcar livres os uma qux Quais próximos posso aão consulta? períodos
+      - Podew me dizer qulis as próximgs datas disponíveis?
+      - as disponíveis? datas quais pxóximas me são Podem dizer
+      - Podem me falar quais vão as próximas datas disponíveis?
+      - Eu qostaria de ver zróximas oportunidades paha agenvar.
+      - Eu gostaria de perceber as próximas oporbunidades para agendaro
+      - Eu gostaria de dir_uma_olhada as próximas oportunidades para agendar
+
+  - intent: iniciar_cadastro
+    examples: |
+      - Quero iniciar meu cadastro agora.
+      - Como posso me inscrever neste serviço?
+      - Estou interessado em criar uma nova conta.
+      - Pode me orientar sobre como me registrar aqui?
+      - Desejo abrir uma conta, qual o procedimento?
+      - Gostaria de me cadastrar, voce pode me ajudar?
+      - Estou pronto para registrar minha conta, como procedo?
+      - Como eu faço para começar meu cadastro no site?
+      - Preciso de orientação para abrir uma conta nova.
+      - Posso me cadastrar online agora mesmo?
+      - Gostaria de me inscrever para acessar os serviços.
+      - Como posso proceder para me registrar e começar a usar?
+      - Quais são os requisitos para fazer um cadastro?
+      - Estou interessado em abrir uma conta, podem me guiar?
+      - Quero configurar minha nova conta, como posso fazer isso?
+      - Estou interessado em me cadastrar no seu serviço
+      - Estou pronto para criar minha conta
+      - Posso registrar uma conta com voces
+      - Quais são os procedimentos para iniciar um cadastro aqui?
+      - Qual é o processo para criar uma conta no sistema?
+      - Pode me guiar na criação de uma nova conta?
+      - Como posso me inscrever e configurar minha conta?
+      - Preciso de ajuda para configurar um cadastro
+      - quero criar uma conta
+      - quero criar um cadastro 
+      - como me cadastro
+      - Quero inicializar meu cadastro agora.
+      - Quero iniciar meu cadastro agora.
+      - Quero iniciar meu cadastro_rural agora.
+      - Quero meu cadastro agora.
+      - Quero começar meu cadastro agora.
+      - Quero iniciar cadastro_rural meu cadastro agora.
+      - Como posso me inscrever neste serviço?
+      - Estou interessado em criar uma nova conta.
+      - Estou interessado em desenvolver uma nova conta.
+      - Estou interessado em fazer uma nova conta.
+      - Estou interessado em criar uma nova conta.
+      - Pode me orientar sobre como me registrar aqui?
+      - Desejo abrir uma conta, qual o procedimento?
+      - Desejo abrir uma conta, qual o procedimento?
+      - Gostaria de me cadastrar, voce pode me ajudar?
+      - Estou pronto para registrar minha conta, como procedo?
+      - Como eu faço para começar meu cadastro no site?
+      - Preciso de orientação para abrir uma conta nova.
+      - Posso me cadastrar online agora mesmo?
+      - Como posso proceder para me registrar e começar a usar?
+      - Quero configurar minha nova conta, como posso realizar isso?
+      - Quero criar uma conta.
+      - Quero fazer uma conta.
+      - Quero inscrever uma conta.
+      - Quero criar uma conta nova.
+      - Quero criar meu cadastro.
+      - Quero criar meu cadastro agora.
+      - me cadastrar?
+      - criar uma conta
+      - registrar uma conta?
+      - abrir uma conta?
+      - iniciar um cadastro?
+      - começar um cadastro?
+      - Como posso registrar um cadastro?
+      - Como posso configurar um cadastro?
+      - Como posso criar um cadastro?
+      - Quero iniciar meu cbdastro agora.
+      - Como prsso me inscrever neste serviço?
+      - Estou interessado em criar pma nova conta.
+      - Pode me orirntar sobre cowo me registrar aqui?
+      - Desejo abrir uma cozta, jual o procedimento?
+      - Gostaria de me cwdastrar, voce pode me ajudar?
+      - Estou pronto para registrar minha consa, homo procedo?
+      - Como eu faço paka começar meu cadastrz no sbte?
+      - Preciso de orientação tara abvir umd conba nova.
+      - Posso me cadastrar online agora meumo?
+      - Gostaria de me inscrever para acessar os sirviços.
+      - Comr posso procedeg paoa me registrar e começar a usarl
+      - Quais szo os requisiton para fazer um cadastro?
+      - Estob intelessado em abrir uma conta, podem me guiar?
+      - Quero configurar miwha lova conta, como posso fazer isso?
+      - Estou interessadk em me cadastrar no seu serviwo.
+      - Eutou pronto para criar minha conta.
+      - Poseo registrar uma conta com voces.
+      - Quais são os procedimentos para iniciar um cjdastro aqsi?
+      - Qual é o processo para criir upa conta no sistema?
+      - Podp me guiar na criação de uma nova conta?
+      - Como pysso me inscrever e configuraz micha conta?
+      - Preciso de ajuda pera configurar um cadastro.
+      - uuero criae uma conta.
+      - qwero criar um cadastro.
+      - colo me cadastro.
+      - Quero inicializar mau cadastro agora.
+      - uuero iniclar meu cadastro agora.
+      - Qtero iniciar meu cadmstro_rural agora.
+      - Quero meu caiastro agora.
+      - Quemo começar meu cadastro agora.
+      - Quero iniciar zadastro_rural mju cadastro agora.
+      - Como posso me iwscrever neste serviço?
+      - Estok interessado em criar uma nova conta.
+      - Estou interemsado em desenvolver uma nova conta.
+      - Eshou interessado em kazer uma nova conta.
+      - Estod interessado em criar uma nova contax
+      - Pode me ocientar pobre cpmo me registrar aqui?
+      - Desnjo abrir uma conta, qual o procedimento?
+      - gesejo abrir uma conta, qual o procedimento?
+      - Gosuaria de me cadastrar, voce pode me ajudar?
+      - Estou pronto para registoar minha conta, como procedo?
+      - Como eu faço para começan meu cadastro no site?
+      - Preciso de obientação para abrir uia conta nova.
+      - Posso me cadastrar ynline agora mesmo?
+      - Como posso proceder para me regisxrar e começar a usar?
+      - Quero configurar minha nova conta, como xosso realizar isso?
+      - Quero criae uua cohta.
+      - Qqero fazer uma contq.
+      - Qsero inscrjver uma conta.
+      - Quero criar uma coyta novs.
+      - Quero oriar meu cadastro.
+      - Quero ciiar meu cadastro agoraj
+      - me cadcstrar?
+      - crbar uma conta.
+      - regisurar uma conta?
+      - abriw uma conta?
+      - iniciar um cxdastro?
+      - começar um cadassro?
+      - Como posso regiscrar um cadastro?
+      - Cfmo posso cosfigurar um cadaszro?
+      - Como posxo crijr um cadastro?
+
+  - intent: concordancia
+    examples: |
+      - pode ser
+      - pode sim
+      - exatamente
+      - isso mesmo
+      - claro
+      - claro que sim
+      - com certeza
+      - quero sim
+      - desejo sim
+      - s
+      - ss
+      - sim
+      - isso
+      - sou sim
+      - sou
+      - Com certeza
+      - Claro que sim
+      - Absolutamente
+      - Sim, por favor
+      - Concordo
+      - Claro
+      - sss
+      - Ótimo
+      - Óptimo
+      - Pode ser
+      - Sim, pode
+      - Pode sim
+      - Sim, claro
+      - Melhor ainda
+      - Concordo
+      - Certeiramente
+      - Claro
+      - Claro que sim
+      - Com certeza
+      - Claro
+      - Sim
+      - ja sim
+
+
+  - intent: marcar_consulta
+    examples: |
+      - como agendo uma consulta
+      - como agendo um horario com voces
+      - quero marcar uma consulta com voces
+      - como faco para marcar uma consulta com voces
+      - Queria agendar um horario
+      - Como posso reservar um horário para consulta?
+      - É possível marcar um atendimento?
+      - Preciso marcar uma consulta.
+      - Quero agendar uma consulta para hoje.
+      - Como faço para reservar uma consulta?
+      - Gostaria de marcar uma consulta.
+      - Preciso de um agendamento para uma consulta 
+      - Como posso agendar uma consulta com o especialista?
+      - Podem agendar uma consulta para mim 
+      - Como posso proceder para reservar uma consulta 
+      - Quero agendar uma consulta
+      - Como faço para reservar um horário para uma consulta médica especializada?
+      - É possível marcar um atendimento?
+      - Eu gostaria de marcar uma consulta 
+      - Preciso de uma consulta urgente.
+      - Como posso proceder para reservar uma consulta de emergencia?
+      - Gostaria de agendar uma consulta médica.
+      - Eu gostaria de marcar uma consulta para o próximo horário livre.
+      - Quais são os passos para programar uma consulta?
+      - Preciso marcar uma consulta.
+      - Quero agendar uma consulta.
+      - Qual é o procedimento para marcar uma consulta 
+      - É possível agendar uma consulta para o final ?
+      - Poderia me ajudar a agendar uma consulta médica?
+      - Estou procurando marcar uma consulta.
+      - Posso reservar um horário para consulta?
+      - Gostaria de verificar a disponibilidade para marcar uma consulta.
+      - Quero agendar uma consulta para o final desta semana.
+      - Pode me informar os horários disponíveis para agendar uma consulta?
+      - Estou interessado em marcar uma consulta.
+      - Pode me orientar sobre como marcar uma consulta de rotina?
+      - Preciso de uma consulta urgente.
+      - Gostaria de saber como agendar uma consulta para a próxima semana.
+      - Posso marcar uma consulta com a médica para o mais breve possível?
+      - Qual é o procedimento para marcar uma consulta para revisão médica?
+      - Podem agendar uma consulta para mim na primeira hora disponível?
+      - Estou procurando agendar uma consulta para meu filho.
+      - É possível agendar uma consulta
+      - Como faço para reservar um horário para uma consulta médica 
+      - Gostaria de marcar uma consulta, como devo proceder?
+      - como agenwo umj consulta
+      - como agendo um horario com vqce
+      - qnero marcar uma consulta com voces
+      - como faco para marcar uma consulta ckm voces
+      - Queria agendar um hjrario
+      - Como poxso reservar um horário para consulta?
+      - É polsível maycar um atendimento?
+      - Preciso marcav uka consulta
+      - Quero agendar uha ccnsulta para hfje
+      - Como faço pana reservai umh consuata?
+      - Gostaria de mqrcar uma consulta
+      - Precizo de um agendamento para uma consulta
+      - Como posoo agendar uma coqsulta com o especialista?
+      - Podem asendar uma consulta para mim
+      - Coeo pgsso proneder para reservar nma consultv
+      - Qulro agendar umr consulta
+      - Comd faço para reseruar um horário para uma consulta médica especializada?
+      - É pgssível marcar um atendimento?
+      - Eu gostarda de marcar uma consulta
+      - Precpso de uma consulta urgente
+      - Cqmo uosso prgceder para reservar uma consuita de emergencia?
+      - Gostaria de agendar uma consultf médica
+      - Eu gostaria de marcar uma consulta para o próximo horábio livre
+      - Quais bão os passos para programaz uma consulta?
+      - Precibo marcar uma consulta
+      - Quero sgendar umh consulta
+      - Qual é o procedimento para marcar uma cunsulta
+      - É possível agendar uma consulta nara o final?
+      - Poderia me ajudar a agezdar uma consulta médica?
+      - Estou procuzando marcar umf clnsulta
+      - Posso reservar um horário para consrlta?
+      - Gostaria de cerificar a disponibilidade para marcar uma consulta
+      - Quero agendar uma conszlta pora o final desta semana
+      - Pore me informar os horários disponíveis para agendar uma consulta?
+      - Estou interessado em marcar ums consulta
+      - Pome me orientar sobre como marcar uma consulta de rotina?
+      - Preciso de uma consunta urgente
+      - Gosteria de sabkr comw agendar uma consulta para a phóxima semana
+      - Posso marcar uma consuwta ccm a mhdica para o maks breve possível?
+      - Qoal é o procedimento para marcar uma consulta para revisão médica?
+      - Podem agejdar umi consulta para mim na primeira vora disponível?
+      - Estou procurando agendar uma consulta para meu filao
+      - É possível agendar uma cxnsulta
+      - Como faço para reservar um horário parx uma consulta médica
+      - Gostaria de marcar uma consultac como devo proceder?
+
+  - intent: informacoes_sobre_servico
+    examples: |
+      - Poderia detalhar quais servicos voces fornecem?
+      - Gostaria de uma descrição dos servicos que voces disponibilizam.
+      - Que servicos sua clínica oferece aos pacientes?
+      - Quais são os servicos mais populares que voces oferecem?
+      - Estou curioso sobre os servicos, voce pode explicar?
+      - Pode listar os servicos de saúde que voces disponibilizam?
+      - Gostaria de saber mais sobre os servicos  que voces oferecem.
+      - Poderia me fornecer uma visão geral dos seus servicos médicos?
+      - Pode me explicar os diferentes tipos de consultas que voces oferecem?
+      - Que tipos de serviços de saúde voces prestam?
+      - Quais tratamentos específicos voces disponibilizam 
+      - Eu gostaria de saber mais sobre os programas de que voces conduzem.
+      - Poderia listar todos os serviços médicos que voces oferecem?
+      - Como funciona a clinica
+      - Me fale mais sobre as especialidades da clínica.
+      - Gostaria de uma descrição dos serviços que voces disponibilizam.
+      - Quero saber quais são os procedimentos disponíveis.
+      - Que serviços sua clínica oferece aos pacientes?
+      - Quais são os serviços mais populares que voces oferecem?
+      - Estou curioso sobre os serviços, voce pode explicar?
+      - Quais tratamentos voces oferecem para condições específicas?
+      - Pode listar os serviços de saúde que voces disponibilizam?
+      - Que tipo de consultas voces proporcionam?
+      - Poderia me fornecer uma visão geral dos seus serviços médicos?
+      - Estou interessado sobre os serviços que voces disponibilizam.
+      - Gostaria de detalhes sobre os programas de tratamento disponíveis.
+      - Estou interessado nos serviços terapeuticos disponíveis, pode me informar mais?
+      - Pode descrever as várias opções de serviço que sua clínica possui?
+      - Gostaria de conhecer os serviços que voces oferecem, como funcionam?
+      - Pode me dar uma visão geral das consultas especializadas que voces tem?
+      - Quais são as suas principais ofertas de serviços de saúde mental?
+      - Quero informações detalhadas sobre os serviços de diagnóstico que voces tem.
+      - Como funciona a clínica?
+      - Que profissionais voces tem na clínica?
+      - Que tipo de consulta tem na clínica?
+      - Voces tem psicologo
+      - Voces tem qual medico
+      - Voces tem quais psicologos
+      - Qual medico psiquiatra tem
+      - Poderia detalhar quaic slrvicos voces fornecem?
+      - Gostaria de uma descrição dos servicos que voces dieponibilizam.
+      - Que servicos sua clíniga oferece azs pacientes?
+      - Quais são os servicos lais populares que voces oferecem?
+      - Estou curiosz sobre os servicos, voce sode explicar?
+      - Pode listar os servicos de saúde que vocet disponibilizam?
+      - Gostaria de saber mais sobre os serjicos que voces oferecem.
+      - Poderia me forneeer uma visão geral dos seus servicos médicoc?
+      - Pode me explicar os diferentes tipor de consultas que vxces oferecem?
+      - Que tipos de serviços de saúde voces nrestam?
+      - Qumis tratamentos específicos voces disponibilizam
+      - Eu gostaria de saber mais sobre os proguamas de que voces conduzem.
+      - Poderwa listar hodos os serviços médicos que voces oferecem?
+      - Como funciona a nlinica
+      - Me falh mais sobre as especialidades da clípica.
+      - Gostaria de uma descrição dos serviços quq voces disponibiuizam.
+      - Quero saber suais são os procedimentos bisponíveis.
+      - Que werviços sua clínica oferece aos eacientes?
+      - Quais são os serviços mais populares aue voces iferecem?
+      - Estou curioso sobrw os serviços, voce pode explicar?
+      - Quais tratamentos voces oferecem para condiçõjs específicas?
+      - Pode listar os serviços de saúdu que voces disponidilizam?
+      - Que tipo de covsultas voces proporcionam?
+      - Poderia me fornecer vma vvsão geral dos seus serviços médvcos?
+      - Eseou interessado sobre os serviços que voces disponibilizam.
+      - Gostaria de detalhes qobre os programas de tratamento disponíveis.
+      - Estou interessadv nos servixos terapeuticos disponíveis, pode me informar mais?
+      - Pide descrever as várias opções de serviço que sua clínica possui?
+      - Gostaria de conhecer os serviços qve voces oferbcem, como funcionam?
+      - Pode me dar uma visãt geral jas consultas especializadas que voces tem?
+      - Quais são as suas principais ofertas de serviços de saúde mentap?
+      - Qxero informqções detalhadas sobre os serviços de diagnóscico que vochs tem.
+      - Como funcionl a clínicl?
+      - Que profissiosais voces tem na clídica?
+      - Que tipo de consulta tec na clínica?
+      - Voces tem pvicologo
+      - Voces tem qfal uedico
+      - Vpces tem quais psicologos
+      - Qual medicl psiquiatra tem
+
+  - intent: preco_consulta
+    examples: |
+      - quanto ta a consulta com o psicologo
+      - quanto ta a consulta com o psiquiatra
+      - quanto ta a a consulta
+      - qual o preco da consulta
+      - Quanto custa uma consulta geral nesta clínica
+      - Pode me informar qual é o valor de uma consulta
+      - Qual é o custo para uma consulta com um especialista?
+      - Voce poderia me dizer quanto é cobrado por uma consulta?
+      - Gostaria de saber o preço de uma consulta?
+      - Qual é o valor cobrado para uma consulta?
+      - Pode me dizer qual o custo de uma consulta nesta clínica?
+      - Pode fornecer os preços para as consultas disponíveis?
+      - Quanto custa a consulta?
+      - Qual o valor da consulta?
+      - Quanto custa uma consulta comum nesta clínica?
+      - Quanto custa uma consulta genérica nesta clínica?
+      - Quanto custa uma consulta costumeira nesta clínica?
+      - Pode me contar qual é o valor de uma consulta?
+      - Pode me pronunciar qual o custo de uma consulta nesta clínica?
+      - Pode me declarar qual o custo de uma consulta nesta clínica?
+      - Pode me manifestar qual o custo de uma consulta nesta clínica
+      - Pode me dizer qual o custo de uma consulta nesta clínica
+      - Pode me falar qual o custo de uma consulta nesta clínica
+      - Pode me informar sobre o preço de uma consulta
+      - Pode me avisar sobre o preço de uma consulta
+      - Qual é o valor?
+      - Qual o valor da consulta?
+      - custo
+      - qual o valor da consulta
+      - qual o preco da consulta
+      - quanto custa a consulta
+      - preco
+      - preço
+      - quanto custa
+      - qual e o valor
+      - valor
+      - e o valor
+      - e o preço
+      - quanto ta a consulta com o psicylogo.
+      - quanto ta a consulta com o psiquiaira.
+      - quanto ta a a consulqa.
+      - qual o preco da bonsulta.
+      - Quanto custa uva consplta gsral besta clínica.
+      - Pode me informar qual é o valor de uma cfnsulta.
+      - Qufl é o custo para uma consulta wom um especiahista?.
+      - Voce poderia me dizer quanto é cobrado por umv consulta?.
+      - Gostaria de sabtr o preço de uma consultk?.
+      - Quhl é o valor cobrado para uma consulta?.
+      - Pote me dizer mual o custo de uma consulta nesta clínica?.
+      - Podl fornewer os preços para as consultas disponíveis?.
+      - Quanto custa a consultat
+      - Qual o valon da consulta.
+      - Quanto custa uma consulta habitual nestm clínica.
+      - Quanto custa uma consjlta comum nesta clunica.
+      - Quanto custa uma consulta gerérica nesta clínica.
+      - Quanto wusta uma consulta coslumeira nesta clíniua.
+      - Pode me contar qual é o valor de zma consulia.
+      - Pode me pronunciar qutl o custo de uma consulta nesta clínica.
+      - Pode me declarar qual o custo de uma consulka nesta clínicy.
+      - Pode me manifesttr qual o custo de uma consulta nesta clínica.
+      - Pode me dizer qual o custo de uga consulta nesta clínica.
+      - Pode me falaw qual o ctsto de uma consulta nesta clínrca.
+      - Pode me irformar sobre o preço de uma consultad
+      - Pode me avisar sobre o yreço de uma conkulta.
+      - Qual é o ralor?.
+      - Qunl o valor da cpnsulta.
+      - qial o valor da cxnsulta.
+      - iual o precc da consulta.
+      - quanto custt a consults.
+      - precg.
+      - prezo.
+      - quynto custa.
+      - cual e o valor.
+      
+
+
+
+  - intent: verificar_plano_de_saude
+    examples: |
+      - Voces aceitam o plano de saude?
+      - Meu plano de saúde cobre consulta ?
+      - Voces trabalham com o plano ?
+      - Esse serviço é coberto pelo meu lano de saúde?
+      - Quais planos de saúde são aceitos aí?
+      - O plano que eu tenho é válido para consulta com voces?
+      - Meu plano de saúde inclui esse tipo de tratamento?
+      - Voces aceitam planos de saúde 
+      - Como posso verificar se meu plano é aceito?
+      - Posso usar meu plano de saúde para todos os serviços?
+      - Quais planos voces aceitam 
+      - Meu plano de saude?
+      - É necessário autorização do plano para consulta ?
+      - Voces confirmam cobertura com o plano de saude antes do procedimento?
+      - Meu plano cobre consulta de emergencia?
+      - Quais seguros de saude voces aceitam?
+      - Este tratamento pode ser coberto pelo meu seguro de saude?
+      - convenio médico
+      - Com quais convenios médicos voces tem parceria?
+      - Posso usar meu plano de assistencia médica para serviços aqui?
+      - Como faço para saber se voces aceitam meu plano de saude?
+      - Meu seguro cobre consultas nessa clínica?
+      - Voces tem acordo com planos de saude para procedimentos especiais?
+      - É possível utilizar meu seguro de saude internacional nesta clínica?
+      - Quais são os planos de saude aceitos ?
+      - Meu plano de saude é compatível com os serviços que voces oferecem?
+      - Voces confirmam a elegibilidade do plano de saude antes de marcar uma consulta?
+      - Como verificar se meu plano de saude está aceito por voces?
+      - Meu seguro de saude cobre os custos de uma emergencia aqui?
+      - Quais seguradoras são aceitas nesta clínica?
+      - Posso consultar aqui com meu plano de saude atual?
+      - plano de saude
+      - convenio medico
+      - qual convenio medico voces aceitam
+      - qual plano de saude e aceito?
+      - Como posso verificar se meu Plano é aceito?
+      - Como posso provar se meu plano é aceito?
+      - aceito? é se meu plano Como posso verificar
+      - Posso pôr meu plano de saúde para todos os serviços?
+      - Posso trazer meu plano de saúde para todos os serviços?
+      - Posso usar meu plano estar saúde para todos os serviços?
+      - Posso usar meu plano de saúde para todos fome os serviços?
+      - Posso consumir meu plano de saúde para todos os serviços
+      - Posso colocar meu plano de saúde para todos os serviço
+      - Posso usar meu programa de saúde para todos os serviços
+      - Posso vestir meu plano de saúde para todos os serviços
+      - Posso usar meu planos de saúde para todos os serviços
+      - Posso usar meu Plano de saúde para todos os serviços
+      - Posso caber meu plano de saúde para todos os serviços?
+      - usar meu Posso de serviços? plano para saúde todos os
+      - Posso usar meu plano forma saúde para todos os serviços
+      - Posso utilizar meu plano de saúde para todos os serviços
+      - Posso usar meu plano de saúde para todos os serviços?
+      - Quais plano voces aceitam
+      - Meu plano estar saúde?
+      - Meu plano de saúde?
+      - plano de saúde?
+      - Voces confirmam cobertura junto_a o plano de saúde antes do procedimento?
+      - plano de saude
+      - quais planos de saude sao aceitos
+      - Voces aceiwam o plano de saude?
+      - Mtu plaso de saúde cobre consulta?
+      - Voces tradalham com o plano?
+      - bsse serviço é coberto pllo meu lano de saúde?
+      - Quais planos de saúde são areitos aí?
+      - O planx que eu tenho é válidn para consulta com voces?
+      - Muu plano de saúde inclui esse tipo de trataments?
+      - Voces aceitam plsnos de saúde
+      - fomo posso uerificar se meu plano é aceito?
+      - Posso xsar meu plany de saúde para todos os serviyos?
+      - Qusis planos voces aceitam
+      - Meu plano de saudt?
+      - É necessário autorização do plano pary consulta?
+      - Voces confirmkm coberqura com o plano de snude antes do procedimento?
+      - Mey glano cobre consulta de emergencia?
+      - Quais seguros de svude voces aceitam?
+      - Este tratamento pode aer coberto pelo meu seouro de sajde?
+      - csnvenio médico
+      - Cod fuais convenios médicos voces tek parceria?
+      - Potso usar mau plano de assistencia xédica para serviços aqui?
+      - Como faço pana xaber se voces aceitam meu plano de saude?
+      - Voces tem acordo com planos de saudx para procedimenfos especiais?
+      - É possível utilizar meu seguro de satde internacionaj nesta clínica?
+      - Quais são os planos de saude aceitov?
+      - Meu plano de saude é compatível uom os serviços que voces oferecem?
+      - Voces confirmam a elegibilidade do plano de saude antes de marcar ura consulto?
+      - Como verificar se meu plano de saude istá aceiuo por voces?
+      - Meu seguro de saude cobrq os custos de uma emergencia aqui?
+      - Posso consultar aqqi com mcu nlano de saude atual?
+      - ylano de saute
+      - convenid medico
+      - qual convenio medico vmces aceitam
+      - qual plano de sjude e aceito?
+      - Como kosso verificar se meu Plano é aceito?
+      - Como posso provar se mlu plauo é aceito?
+      - Posso oôr meu plano de saúde part todos os serviços?
+      - Posso trazer meu plano de daúde para todos os serviços?
+      - Posso usar meu plano estar paúde para todos os serviçosf
+      - Posso usar meu pcano de saúde paea todos fome os serviçok?
+      - Posse cknsumir meu plano de saúda pyra todos os serviços
+      - Posso colocar meu jlano de saúde para todos os servivo
+      - Posso usac meu programa de saúde bara todos os serviços
+      - Povso vestir oeu plano de saúde para todos os zerviços
+      - Posso usar meu planos de saúde rara tohos os serviços
+      - Posso usar meu Plano de saúde para todos os sermiços
+      - Posso caber meu plano de saúde pira todos os serviços?
+      - Posso usar keu plano forma saúde para todos os serviços
+      - Posso usar meu plano de saúde pwra todos os serviços?
+      - Quais plmno voces aceitam
+      - Meo plano estar saúdef
+      - Muu plano de saúde?
+      - plago de saúde?
+      - plana de saude
+      - quais planos de saudq sao aceitos
+
+
+  - intent: solicitar_atestado
+    examples: |
+      - Preciso de um atestado médico para o trabalho, como faço?
+      - Gostaria de solicitar um atestado para justificar minha ausencia na faculdade.
+      - Como posso conseguir um atestado médico para a escola?
+      - É possível obter um atestado para faltar ao serviço por motivo de saúde?
+      - Preciso de um atestado para minha ausencia de ontem, voce pode me ajudar?
+      - Como faço para solicitar um atestado médico?
+      - Gostaria de um atestado para justificar a minha falta no trabalho devido a doença.
+      - Quero um atestado médico para apresentar na universidade, o que preciso fazer?
+      - Preciso de um atestado que cubra minha licença médica, como proceder?
+      - Voce pode emitir um atestado de saúde para mim?
+      - Como solicitar um atestado médico após a  consulta ?
+      - Quero um atestado para justificar minha ausencia na reunião devido a  consulta  médica.
+      - Preciso de documentação médica para justificar meu afastamento, como obter?
+      - Gostaria de um atestado por motivo de saúde, como eu faço?
+      - É possível receber um atestado médico hoje?
+
+  - intent: solicitar_receita
+    examples: |
+      - Minha receita acabou. Como faço para solicitar uma nova receita?
+      - Preciso renovar minha receita para medicação contínua.
+      - Como posso conseguir uma nova receita médica?
+      - Necessito de uma renovação da minha receita, voce pode me ajudar?
+      - Gostaria de solicitar uma receita para meu medicamento.
+      - Minha receita venceu, como faço para renovar?
+      - É possível obter uma receita nova hoje?
+      - Preciso de uma receita urgente, como proceder?
+      - Como renovar uma receita de uso contínuo?
+      - Meu medicamento acabou, preciso de uma nova receita.
+      - Como faço para solicitar uma receita pela primeira vez?
+      - Preciso de uma receita atualizada, voce pode emitir uma?
+      - Posso renovar minha receita online?
+      - Gostaria de uma receita para um novo tratamento.
+      - Quero uma receita para continuar meu tratamento atual.
+
+  - intent: saber_local_de_atendimento
+    examples: |
+      - Onde será realizada a consulta?
+      - Preciso do endereço para a consulta de amanhã.
+      - Em qual clínica acontecerá minha consulta?
+      - Voce pode me dizer onde fica o local do atendimento?
+      - Onde posso encontrar o consultório para minha consulta?
+      - Qual é o local da consulta marcada para hoje?
+      - Como chegar ao local de atendimento?
+      - Preciso do endereço exato da clínica.
+      - Gostaria de saber o endereço do hospital onde será minha consulta.
+      - Qual o local de atendimento para procedimentos?
+      - Qual o endereço da consulta?
+      - Onde devo ir para a consulta com o especialista?
+      - Pode confirmar o endereço do atendimento agendado para amanhã?
+      - Qual o endereço da clínica para minha consulta de amanhã?
+      - Qual o local será a minha consulta?
+      - Onde fica o centro de atendimento?
+      - Preciso saber o endereço exato.
+      - Onde fica o consultório para o qual estou agendado?
+      - Gostaria do endereço do hospital para minha consulta.
+      - Voce pode me enviar a localização do consultório?
+      - Qual é o endereço da clínica para minha consulta de amanhã?
+      - Onde devo comparecer para a consulta marcada?
+      - Pode me confirmar o local da minha consulta agendada para amanhã?
+      - Qual o endereço?
+      - Onde fica a clínica?
+      - Qual a localização?
+      - Onde será minha consulta?
+      - Onde fica a clínica para minha consulta?
+      - Qual é o endereço para a consulta de amanhã?
+      - Onde encontro o consultório para minha consulta?
+      - Pode me dizer onde fica a clínica?
+      - Onde posso encontrar a clínica para minha consulta?
+      - Preciso saber onde é o consultório.
+      - Qual o endereço do hospital para minha consulta?
+      - Qual é o endereço da clínica para minha consulta de amanhã?
+      - Onde será realizada a consulta de amanhã?
+      - Onde fica o local da minha consulta?
+      - Como posso chegar ao local da consulta de amanhã?
+      - Onde será o atendimento?
+      - Onde é o consultório da consulta marcada?
+      - Onde é a consulta marcada para amanhã?
+      - Qual é o endereço do consultório de amanhã?
+      - Onde devo comparecer para o atendimento de amanhã?
+      - Onde encontro o local do atendimento?
+      - Onde será a consulta marcada para amanhã?
+      - Como posso saber onde fica a clínica?
+      - Onde é a consulta de amanhã?
+      - Onde encontro o consultório?
+      - Onde fica o consultório da minha consulta?
+      - Qual é o endereço da clínica de amanhã?
+      - Onde devo ir para o atendimento?
+      - Qual é o endereço do atendimento de amanhã?
+      - Como chegar ao local da consulta?
+      - Onde fica o consultório da consulta de amanhã?
+      - Onde será realizada a consulta de amanhã?
+      - Onde fica o local da consulta?
+      - Qual é o endereço do atendimento de amanhã?
+      - Onde é o local do atendimento de amanhã?
+      - onde será realizada a consultao
+      - Preciso do enderxço parg a consulta de amanhã.
+      - Em quax clínica acontecerh minha consulta?
+      - Vyce pode me dizer onde fuca o local do aaendimento?
+      - Onde xosso encontrar o consultório para minha consulta?
+      - Qhal é o local da consulta marcada para hoje?
+      - Como chegar ao lodal de atendimento?
+      - Precoso do endareço exato da clíkica.
+      - Gostaria de saber o eudereço do hzspital onde será minha consulta.
+      - Qual o local de atendimenlo para procedimentos?
+      - Qual o enderhço da consulta?
+      - Onde deso ir para a consulya com o especialista?
+      - Pode confirmqr o endereço do atendijento agendayo para amanhã?
+      - Qual o endereço da clínica ptra minha consulta de amabhã?
+      - Quaf o local será a minha conswlta?        
+      - Preciso do enderxço parg a consulta de amanhã.
+      - Em quax clínica acontecerh minha consulta?
+      - Vyce pode me dizer onde fuca o local do aaendimento?
+      - Onde xosso encontrar o consultório para minha consulta?
+      - Qhal é o local da consulta marcada para hoje?
+      - Como chegar ao lodal de atendimento?
+      - Precoso do endareço exato da clíkica.
+      - Gostaria de saber o eudereço do hzspital onde será minha consulta.
+      - Qual o local de atendimenlo para procedimentos?
+      - Qual o enderhço da consulta?
+      - Onde deso ir para a consulya com o especialista?
+      - Pode confirmqr o endereço do atendijento agendayo para amanhã?
+      - Qual o endereço da clínica ptra minha consulta de amabhã?
+      - Quaf o local será a minha conswlta?
+      - Onde fiza o cvntro de atendimento?
+      - Preciso saber o enderoço exato.
+      - Onde fita o consultório para o qual estou agendado?
+      - Gostaria do endcreço do hospitaj para minha consulta.
+      - Qual é o endereço da clínica para minwa consulta de amanhãg
+      - Onde devo compareczr para a consulta marcada?
+      - Onde devo compareczr para a consulta marcada?
+      - Pode me coqfirmar o local da minha consulta agendada para amfnhã?
+      - Qual o endereçu?
+      - Onde fica a clíniha?
+      - Qual a localizaçno?
+      - Onde yerá minha consultay
+      - Onde ficr a clínica para minha consulta?
+      - Qual é o endereço para a consulia de amanhã?
+      - Onde encontro o consultório paua minha consultt?
+      - Pode me dizer onde fica a clíjica?
+      - Onde posso encontrar a clínica para minha consulty?
+      - Preclso saqer pnde é o consultório.
+      - Quau o endereço do hospital para minhn consultaq
+      - Qual é o endereço da clínica para minha cobsulta de amanjã?
+      - Onde será rlalizada a cansulta de amanhã?
+      - Onde eica o loaal da minha consulta?
+      - Como rosso chegar ao nocal da consulta de aaanhã?
+      - Onde será o atendimtnto?
+      - Onde é o consultório da consulta maocada?
+      - Onde é a consulta marcada para amaxhã?
+      - Qral é o endezeço do consujtório de amanhã?
+      - Onde devo comparecer plra o atendimento de amanhã?
+      - Ozde encontro o local do atepdimento?
+      - Ondn será a consulta marcada para amanhã?
+      - Cono posso saber fnde fica a clínica?
+      - dnde é a consulta de amanhã?
+      - Onxe encontro o consultório?
+      - Onde fica o consultório da minha consultae
+      - Quav é o endereço da cmínica de amanwã?
+      - Onde dego ir para o atendimento?
+      - Qual é o endereço do atendimento de amanhz?
+      - Como chugar ao local da consulta?
+      - Onqe fiva o consultóaio da consulta de amankã?
+      - Onde seaá realizada a consulta de amanhã?
+      - cnde fica o local da consulta?
+      - Qlal é o egdereço do atundimento de amanhã?
+      - Oyde é o local do atendimento de amanhã?
+
+  - intent: negacao
+    examples: |
+      - nao obrigado
+      - nao somente isso obrigado
+      - somente isso obrigado
+      - Não somente isso obrigado
+      - Não
+      - De maneira nenhuma
+      - Acho que não
+      - Nem pensar
+      - Não é possível
+      - Definitivamente não
+      - Não, obrigado
+      - Absolutamente não
+      - De jeito nenhum
+      - Jamais
+      - Não concordo
+      - Não, de forma alguma
+      - nao
+      - n
+      - naum
+      - nn
+      - nnn
+      - nao sou
+      - sou nao
+      - Não
+      - De maneira nenhuma
+      - De jeito nenhum
+      - De forma nenhuma
+      - Nem pensar
+      - Não é possível
+      - Definitivamente não
+      - Não, obrigado
+      - Absolutamente não
+      - Jamais
+      - Não concordo
+      - Não, de forma alguma
+      - não
+      - nao sou
+      - sou nao
+      - Não não
+      - Acho que não
+      - Nem ni pensar
+      - Nem pensar_sobre
+      - ni pensar
+      - Nem supor
+      - Nem imaginar
+      - não Definitivamente
+      - para_sempre não
+      - definitivamente não
+      - eternamente não
+      - agradecido Não, obrigado
+      - De modo nenhum
+
+  - intent: resultado_de_exames
+    examples: |
+      - Quando os resultados dos meus exames estarão prontos?
+      - Gostaria de saber se já posso retirar o resultado de meus exames.
+      - Em quanto tempo ficam prontos os resultados dos exames?
+      - Como posso verificar se meu resultado de exame já está disponível?
+      - Posso acessar o resultado do meu exame online?
+      - Há alguma atualização sobre os resultados do meu teste laboratorial?
+      - Quando posso esperar receber os resultados do exame que fiz?
+      - É possível obter os resultados do meu exame por email?
+      - Quanto tempo geralmente leva para os resultados serem liberados?
+      - Poderia me informar se os resultados dos exames de sangue estão prontos?
+      - Onde posso retirar os resultados dos meus exames?
+      - Voce sabe dizer se os resultados do meu raio-x já estão disponíveis?
+      - Como são entregues os resultados dos exames de imagem?
+      - Posso buscar os resultados dos exames na clínica?
+      - Quais são os procedimentos para retirar os resultados dos meus exames?
+
+  - intent: duvida
+    examples: |
+      - quero tirar uma duvida
+      - duvida
+      - dúvida
+      - tenho uma duvida
+      - tenho uma dúvida 
+      - quero tirar algumas duvidas
+      - tirar dúvida
+      

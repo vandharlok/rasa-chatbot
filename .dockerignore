@@ -1,0 +1,7 @@
+tests/*
+results/*
+train_test_split/*
+tensorboard/*
+node_modules/*
+**/*.md  
+venv
