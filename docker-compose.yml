@@ -13,7 +13,7 @@ services:
       - frontend
 
     environment:
-      - DATABASE_URL=postgresql://vanderson:Love13Skate06Boarding2002desdemeno@db:5432/chatbot
+      - DATABASE_URL=postgresql://vanderson:senha@db:5432/chatbot
   
     
     
@@ -33,7 +33,7 @@ services:
       - PG_HOST=db
       - PG_PORT=5432
       - PG_USER=vanderson
-      - PG_PASSWORD=Love13Skate06Boarding2002desdemeno
+      - PG_PASSWORD=senha
       - PG_DATABASE=chatbot
 
   frontend:
@@ -45,7 +45,7 @@ services:
     image: postgres:13
     environment:
       POSTGRES_USER: vanderson
-      POSTGRES_PASSWORD: Love13Skate06Boarding2002desdemeno
+      POSTGRES_PASSWORD: senha
       POSTGRES_DB: chatbot
     ports:
       - "5432:5432"
