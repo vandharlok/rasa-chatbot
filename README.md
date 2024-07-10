@@ -78,7 +78,6 @@ tensorboard --logdir ./tensorboard
 
 ![image](https://github.com/vandharlok/rasa-chatbot/assets/104177726/9e6c9697-a296-4fd2-8819-c27c2dacaa36)
 ![image](https://github.com/vandharlok/rasa-chatbot/assets/104177726/3e43f652-0dbe-4271-9bc6-0614f399f196)
-file:///home/vanderson/Downloads/WhatsApp%20Video%202024-06-22%20at%2014.51.02.mp4
 
 
 <strong> Desempenhando um bom acc e loss diminuindo com o tempo. </strong>
@@ -93,3 +92,7 @@ file:///home/vanderson/Downloads/WhatsApp%20Video%202024-06-22%20at%2014.51.02.m
 <p>Para obter ajuda com a configuração ou uso do chatbot, abra uma issue neste repositório.</p>
 
 <p>Este exemplo cobre a instalação e a configuração básica. Certifique-se de ajustar as instruções conforme necessário para o seu projeto específico, especialmente no que se refere aos caminhos dos diretórios e configurações específicas do seu ambiente.</p>
+
+
+<strong> Veja o chatbot funcionando em : </strong> 
+https://www.youtube.com/watch?v=Rgx1upuoqBk
