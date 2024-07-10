@@ -74,10 +74,14 @@ Você pode analisar o desempenho do chatbot, como f1-score, recall, accuracy, lo
 pip install tensorboard
 
 tensorboard --logdir ./tensorboard
-Métricas atuais: ![image](https://github.com/vandharlok/rasa-chatbot/assets/104177726/9e6c9697-a296-4fd2-8819-c27c2dacaa36)
-![image](https://github.com/vandharlok/rasa-chatbot/assets/104177726/3e43f652-0dbe-4271-9bc6-0614f399f196)
+<strong>Métricas atuais: </strong>
 
-Desempenhando um bom acc e loss diminuindo com o tempo.
+![image](https://github.com/vandharlok/rasa-chatbot/assets/104177726/9e6c9697-a296-4fd2-8819-c27c2dacaa36)
+![image](https://github.com/vandharlok/rasa-chatbot/assets/104177726/3e43f652-0dbe-4271-9bc6-0614f399f196)
+file:///home/vanderson/Downloads/WhatsApp%20Video%202024-06-22%20at%2014.51.02.mp4
+
+
+<strong> Desempenhando um bom acc e loss diminuindo com o tempo. </strong>
 
 
 <h3>Configuração do Nginx para o frontend</h3>
