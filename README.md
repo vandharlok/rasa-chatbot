@@ -1,7 +1,7 @@
 <h1>Chatbot para Clínica Médica</h1>
 Este repositório contém um chatbot desenvolvido com o framework Rasa, projetado para facilitar o atendimento em clínicas médicas. O bot pode responder perguntas frequentes e agendar consultas diretamente no Google Calendar.
 
-Funcionalidades
+<strong>Funcionalidades</strong>
 Responder FAQs: Fornece respostas instantâneas às perguntas mais frequentes dos pacientes.
 Agendamento de Consultas: Integra-se com a API do Google Calendar para marcar consultas diretamente através do chat.
 Pré-requisitos
@@ -15,8 +15,6 @@ Configuração do Ambiente
 Docker e Docker Compose
 Instalação do Docker:
 
-Windows e Mac: Baixe o instalador do Docker Desktop aqui.
-Linux: Siga as instruções específicas para a sua distribuição aqui.
 Instalação do Docker Compose:
 
 Incluído no Docker Desktop para Windows e Mac.
