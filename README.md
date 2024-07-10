@@ -74,6 +74,11 @@ Você pode analisar o desempenho do chatbot, como f1-score, recall, accuracy, lo
 pip install tensorboard
 
 tensorboard --logdir ./tensorboard
+Métricas atuais: ![image](https://github.com/vandharlok/rasa-chatbot/assets/104177726/9e6c9697-a296-4fd2-8819-c27c2dacaa36)
+![image](https://github.com/vandharlok/rasa-chatbot/assets/104177726/3e43f652-0dbe-4271-9bc6-0614f399f196)
+
+Desempenhando um bom acc e loss diminuindo com o tempo.
+
 
 <h3>Configuração do Nginx para o frontend</h3>
 <p>As configurações de Nginx estão localizadas no diretório <strong>nginx</strong>.</p>
