@@ -48,6 +48,7 @@ npm install -g sequelize-cli
   <li>Acesse o <a href="https://console.developers.google.com/">Google Developers Console</a>.</li>
   <li>Crie um novo projeto.</li>
   <li>Ative a API do Google Calendar.</li>
+  <li>Entenda melhor sobre a API em <a href= "https://developers.google.com/calendar/api/quickstart/python?hl=pt-br">API CALENDAR </a>. </li>
   <li>Crie credenciais para acessar a API.</li>
   <li>Voce precisara do <strong>token.pickle</strong> e as <strong>credentials.json</strong> em seu no diretorio main, pois e usado nas actions para funcionamento da API do Google Calendar</li>
   <li>Baixe o arquivo JSON das credenciais e guarde-o de forma segura.</li>
