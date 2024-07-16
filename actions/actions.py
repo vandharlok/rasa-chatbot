@@ -135,7 +135,7 @@ class ActionSalvarCadastro(Action):
         telefone = tracker.get_slot("telefone")
         data_nascimento=tracker.get_slot("data_nascimento")
 
-        url = "http://localhost:3000/usuario/cadastro"
+        url = "http://backend:3010/usuario/cadastro"
         data = {
             "name": nome,
             "email": email,
@@ -146,7 +146,6 @@ class ActionSalvarCadastro(Action):
         try:
             response = requests.post(url, json=data)
             if 200 <= response.status_code < 300:
-                dispatcher.utter_message(text="Cadastro concluído com sucesso!")
                 logger.info(f"Usuário de email : {email} registrado com sucesso.")       
                 return [SlotSet("login_sucess", True)]
             else:
@@ -162,7 +161,7 @@ class ActionSalvarCadastro(Action):
 #CONFIRMING USER
       
 def confirm_user(cpf_user):
-    url = f"http://localhost:3000/usuario/consulta/{cpf_user}"
+    url = f"http://backend:3010/usuario/consulta/{cpf_user}"
     try:
         response = requests.get(url)
         if response.status_code == 200:
@@ -369,7 +368,6 @@ class ValidateAndAddEvent(Action):
         time_str = tracker.get_slot('time')
         cpf_user = tracker.get_slot('cpf')
         
-        timezone = pytz.timezone('America/Sao_Paulo')
         target_date = dateparser.parse(time_str, settings={'TIMEZONE': 'America/Sao_Paulo', 'RETURN_AS_TIMEZONE_AWARE': True})
         if not target_date:
             dispatcher.utter_message(text="Formato de data e hora incorreto. Por favor, tente novamente.")
@@ -380,7 +378,7 @@ class ValidateAndAddEvent(Action):
         
         try:
             event_id = add_event(event_name, target_date)  
-            url = "http://localhost:3000/evento/cadastrar"
+            url = "http://backend:3010/evento/cadastrar"
             target_date_str = target_date.strftime("%Y-%m-%d %H:%M:%S")
             data = {
                 "codEvento": event_id,
@@ -451,7 +449,7 @@ class ModifyGoogleCalendarEvent(Action):
         new_start_time_str = tracker.get_slot('time')
         cpf_user = tracker.get_slot('cpf')
         
-        url_get = f"http://localhost:3000/eventos/{cpf_user}"
+        url_get = f"http://backend:3010/eventos/{cpf_user}"
         response_get = requests.get(url_get)
         if 200 <= response_get.status_code < 300:
             data = response_get.json()
@@ -479,7 +477,7 @@ class ModifyGoogleCalendarEvent(Action):
 
             if modify_event(event_id, target_date.isoformat(), new_end_time.isoformat()):
                 formatted_date = target_date.strftime("%Y-%m-%d %H:%M:%S")
-                url_put = f"http://localhost:3000/evento/atualizar/{event_id}"
+                url_put = f"http://backend:3010/evento/atualizar/{event_id}"
                 data = {"data": formatted_date}
                 response_put = requests.put(url_put, json=data)
                 if 200 <= response_put.status_code < 300:
@@ -512,7 +510,7 @@ class ActionDeleteGoogleCalendarEvent(Action):
     def run(self, dispatcher, tracker, domain):
         cpf_user = tracker.get_slot('cpf')
 
-        url_get = f"http://localhost:3000/eventos/{cpf_user}"
+        url_get = f"http://backend:3010/eventos/{cpf_user}"
         try:
             response_get = requests.get(url_get)
             if response_get.status_code == 200:
@@ -541,7 +539,7 @@ class ActionDeleteGoogleCalendarEvent(Action):
 
         try:
             # Deletando no banco
-            url_delete = f"http://localhost:3000/evento/deletar/{event_id}"
+            url_delete = f"http://backend:3010/evento/deletar/{event_id}"
             response_delete = requests.delete(url_delete)
             if 200 <= response_delete.status_code < 300:
                 dispatcher.utter_message(text="Consulta cancelada com sucesso!")
@@ -689,13 +687,11 @@ def get_calendar_service():
     credentials_file = './credentials.json'
     scopes = ['https://www.googleapis.com/auth/calendar']
 
-    # Attempt to load existing credentials
     if os.path.exists(token_pickle):
         with open(token_pickle, 'rb') as token:
             creds = pickle.load(token)
             logger.info("Credentials loaded from pickle file.")
 
-    # Validate credentials
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             try:
@@ -712,7 +708,6 @@ def get_calendar_service():
             except Exception as e:
                 logger.error(f"Failed during the authentication process: {e}")
                 raise
-        # Save the credentials for the next run
         with open(token_pickle, 'wb') as token:
             pickle.dump(creds, token)
             logger.info("Credentials saved to pickle file.")
@@ -800,7 +795,6 @@ def normalize_date(slot_value: str, dispatcher: CollectingDispatcher) -> Optiona
 
     return target_date
 
-#funcao que checa os dias
 def check_availability(date: datetime, dispatcher: CollectingDispatcher, service) -> Tuple[bool, List[str]]:
     available_slots = []
     num_slots_needed = 5 

@@ -15,8 +15,7 @@ RUN rasa train
 USER root
 
 EXPOSE 5005
-EXPOSE 5055
 
-ENTRYPOINT [ "rasa" ]
+ENTRYPOINT ["rasa"]
 
 CMD ["run", "--enable-api", "--cors", "*"]

@@ -1,0 +1,23 @@
+
+FROM python:3.8.19-slim
+
+COPY requirements_actions.txt /app/requirements_actions.txt
+WORKDIR /app
+
+USER root
+
+RUN pip install -r requirements_actions.txt
+
+
+
+COPY ./actions /app/actions
+COPY ./endpoints.yml /app/endpoints.yml
+COPY ./credentials.json /app/credentials.json
+COPY ./token.pickle /app/token.pickle
+USER 1001
+
+EXPOSE 5055
+
+ENTRYPOINT ["rasa"]
+
+CMD ["run","actions"]

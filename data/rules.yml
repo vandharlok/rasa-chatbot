@@ -33,6 +33,9 @@ rules:
   wait_for_user_input: false
 
 
+
+##arumar aki, ta salvando 2x
+
 - rule: finaliza o forms e chama a action salvar user (100% correto)
   condition:
   - active_loop: cadastro_form

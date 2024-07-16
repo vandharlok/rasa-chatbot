@@ -210,12 +210,12 @@ forms:
 
 responses:
   utter_metodo_de_pagamento:
-  - text: |
-      Oferecemos as seguintes opções de pagamento:
-      - Pix
-      - Dinheiro
-      - Cartão de débito
-      - Cartão de crédito (em até 3x sem juros)
+    - text: |
+        Oferecemos as seguintes opções de pagamento:
+        - Pix
+        - Dinheiro
+        - Cartão de débito
+        - Cartão de crédito (em até 3x sem juros)
 
   utter_ask_delete_event_form_cpf:
     - text: "Você poderia me fornecer seu CPF para que possamos continuar?"
@@ -236,150 +236,150 @@ responses:
     - text: "Me desculpe, não captei o que você disse. Você poderia repetir?"
 
   utter_fail_sign:
-    - text: Desculpe não conseguimos te cadastrar em nosso sistema, parece que houve um erro. Tente novamente mais tarde!
+    - text: "Desculpe não conseguimos te cadastrar em nosso sistema, parece que houve um erro. Tente novamente mais tarde!"
   
 
   utter_success_sign:
-    - text: Cadastro concluído com sucesso!
+    - text: "Cadastro concluído com sucesso!"
 
 
   utter_confirm_modification:
     - text: "A data da sua consulta foi alterada com sucesso!"
     
   utter_ask_event_form_cpf:
-  - text: Poderia informar seu CPF corretamente para confirmamos seu cadastro?  
+    - text: "Poderia informar seu CPF corretamente para confirmamos seu cadastro?  "
 
   utter_confirm_appointment:
-  - text: "Deseja agendar?"
+    - text: "Deseja agendar?"
 
   utter_default:
-  - text: Desculpe, não entendi o que deseja
+    - text: "Desculpe, não entendi o que deseja"
 
   utter_ask_event_form_time:
-  - text: |
-      Qual dia e horário seria melhor pra você?
-      Você pode perguntar os proximos dias disponíveis ou também um mês, dia específico do mês
+    - text: |
+        Qual dia e horário seria melhor pra você?
+        Você pode perguntar os proximos dias disponíveis, um mês específico, ou dia do mês
 
   utter_show_options:
-  - text: No que posso te ajudar?
-    buttons:
-      - title: "Marcar uma consulta"
-        payload: "/marcar_consulta"
-      - title: "Remarcar uma consulta"
-        payload: "/remarcar_consulta"
-      - title: "Cancelar uma consulta"
-        payload: "/cancelar_consulta"
-      - title: "Tirar Dúvida"
-        payload: "/duvida"
+    - text: No que posso te ajudar?
+      buttons:
+        - title: "Marcar uma consulta"
+          payload: "/marcar_consulta"
+        - title: "Remarcar uma consulta"
+          payload: "/remarcar_consulta"
+        - title: "Cancelar uma consulta"
+          payload: "/cancelar_consulta"
+        - title: "Tirar Dúvida"
+          payload: "/duvida"
 
   utter_ask_cadastro_form_nome:
-  - text: "Para começarmos, poderia nos contar seu nome completo?"
-  - text: "Antes de tudo, me diga seu nome completo, por favor?"
+    - text: "Para começarmos, poderia nos contar seu nome completo?"
+    - text: "Antes de tudo, me diga seu nome completo, por favor?"
 
   utter_inform_form:
-  - text: "Para usar dos nossos serviços você deve fazer um pequeno cadastro com a gente"
+    - text: "Para usar dos nossos serviços você deve fazer um pequeno cadastro com a gente"
 
   utter_duvida:
-  - text: Que dúvida você tem sobre nossos serviços?
-    buttons:
-      - title: "Preços"
-        payload: "/preco_consulta"
-      - title: "Local de atendimento"
-        payload: "/saber_local_de_atendimento"
-      - title: "Planos de saúde"
-        payload: "/verificar_plano_de_saude"
-      - title: "Serviços oferecidos"
-        payload: "/informacoes_sobre_servico" 
-      - title: "Formas de pagamento"
-        payload: "/metodo_de_pagamento" 
-      - title: "Falar com atendente"
-        payload: "/informacoes_sobre_servico" 
+    - text: Que dúvida você tem sobre nossos serviços?
+      buttons:
+        - title: "Preços"
+          payload: "/preco_consulta"
+        - title: "Local de atendimento"
+          payload: "/saber_local_de_atendimento"
+        - title: "Planos de saúde"
+          payload: "/verificar_plano_de_saude"
+        - title: "Serviços oferecidos"
+          payload: "/informacoes_sobre_servico" 
+        - title: "Formas de pagamento"
+          payload: "/metodo_de_pagamento" 
+        - title: "Falar com atendente"
+          payload: "/informacoes_sobre_servico" 
 
 
 
 
   utter_ask_cadastro_form_data_nascimento:
-  - text: "Qual é a sua data de nascimento?"
+    - text: "Qual é a sua data de nascimento?"
 
   utter_ask_cadastro_form_cpf:
-  - text: "Agora, informe seu CPF"
-  - text: "Por favor, agora digite seu CPF"
+    - text: "Agora, informe seu CPF"
+    - text: "Por favor, agora digite seu CPF"
 
   utter_informacoes_sobre_servico:
-  - text: |
-      Oferecemos uma ampla gama de serviços para promover seu bem-estar e saúde mental, incluindo:
-      Terapia Individual
-      Consulta com Psiquiatra
-      Consulta com Psicólogo
-      Terapia Cognitiva Comportamental
-      Psicoterapia Online
-      Terapia de Casal
+    - text: |
+        Oferecemos uma ampla gama de serviços para promover seu bem-estar e saúde mental, incluindo:
+        Terapia Individual
+        Consulta com Psiquiatra
+        Consulta com Psicólogo
+        Terapia Cognitiva Comportamental
+        Psicoterapia Online
+        Terapia de Casal
 
 
 
 
   utter_ask_cadastro_form_email:
-    - text: "Informe seu email"
-    - text: "Agora informe seu email"
-    - text: "Por favor, informe seu email"
+    - text: Informe seu email
+    - text: Agora informe seu email
+    - text: Por favor, informe seu email
 
   utter_ask_cadastro_form_telefone:
-  - text: "Por fim, informe seu telefone celular"
-  - text: "Agora para finalizarmos, informe seu número de celular"
-  - text: "Por favor, agora informe seu número de celular para finalizarmos seu cadastro"
+    - text: Por fim, informe seu telefone celular
+    - text: Agora para finalizarmos, informe seu número de celular
+    - text: Por favor, agora informe seu número de celular para finalizarmos seu cadastro
 
 
   utter_inicia_cadastro:
     - text: "Você deseja se cadastrar?"
 
   utter_verifica_cadastro: 
-    - text: "Você é já é cadastrado?"
-    - text: "Você já possui um cadastro?"
-    - text: "Para darmos inicio, você já é cadastrado?"
+    - text: Você é já é cadastrado?
+    - text: Você já possui um cadastro?
+    - text: Para darmos inicio, você já é cadastrado?
 
   utter_submit:
-  - text: "Muito obrigado, tenha um ótimo dia!"
+    - text: Muito obrigado, tenha um ótimo dia!
 
   utter_saudações:
-  - text: "Olá! Bem-vindo à nossa clínica."
+    - text: Olá! Bem-vindo à nossa clínica.
 
 
   utter_preco_consulta:
-  - text: O preço de nossas consultas é R$450,00 
+    - text: O preço de nossas consultas é R$450,00 
 
   utter_marcar_consulta: 
-  - text: Deseja marcar uma consulta conosco?
+    - text: Deseja marcar uma consulta conosco?
 
   utter_cancelar_consulta:
-  - text: Voce deseja cancelar sua consulta agendada conosco?
+    - text: Voce deseja cancelar sua consulta agendada conosco?
 
   utter_remarcar_consulta:
-  - text: Deseja remarcar a data da consulta ?
+    - text: Deseja remarcar a data da consulta ?
 
   utter_terminar_conversa:
-  - text: Há mais alguma coisa com que eu possa te ajudar?
-  - text: Posso te ajudar com mais alguma coisa?
+    - text: Há mais alguma coisa com que eu possa te ajudar?
+    - text: Posso te ajudar com mais alguma coisa?
 
 
   utter_final:
-  - text: Muito obrigado pela preferência {nome}, poderia avaliar nossa conversa de 1 a 5? 
-  - text: Obrigado pela preferência {nome}, poderia avaliar nossa conversa de 1 a 5? 
+    - text: Muito obrigado pela preferência {nome}, poderia avaliar nossa conversa de 1 a 5? 
+    - text: Obrigado pela preferência {nome}, poderia avaliar nossa conversa de 1 a 5? 
 
   utter_verificar_plano_de_saude:
-  - text: |
-      Nossa clínica aceita os seguintes planos de saúde:
-      Por favor, verifique se o seu plano está listado abaixo:
-      - AmePlan
-      - Ampla Saúde
+    - text: |
+        Nossa clínica aceita os seguintes planos de saúde:
+        Por favor, verifique se o seu plano está listado abaixo:
+        - AmePlan
+        - Ampla Saúde
       
   utter_desmarcar_consulta:
-  - text: Consulta desmarcada!
-  - text: Seu agendamento foi desmarcado!
+    - text: Consulta desmarcada!
+    - text: Seu agendamento foi desmarcado!
 
   utter_saber_local_de_atendimento:
-  - text: Nossa clinica fica na Avenida das Torres n° 278, São Paulo-SP
+    - text: Nossa clinica fica na Avenida das Torres n° 278, São Paulo-SP
 
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false

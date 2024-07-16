@@ -1,3 +1,4 @@
+version: '3.8'
 services:
   rasa:
     build: .
@@ -5,13 +6,11 @@ services:
       - .:/app
     ports:
       - "5005:5005"
-      - "5055:5055"
     depends_on:
       - duckling
       - backend
       - db
       - frontend
-
     environment:
       - DATABASE_URL=postgresql://vanderson:senha@db:5432/chatbot
   
@@ -25,7 +24,7 @@ services:
   backend:
     build: ../backend-chat
     ports:
-      - "3000:3000"
+      - "3010:3010"
     volumes:
       - ../backend-chat:/app
     environment:
@@ -35,12 +34,17 @@ services:
       - PG_USER=vanderson
       - PG_PASSWORD=senha
       - PG_DATABASE=chatbot
+    depends_on:
+      - db
 
   frontend:
-    build: ../frontend
+    build:
+      context: ../frontend
     ports:
-      - "3001:80"
-  
+      - "3001:3001"
+    volumes:
+      - ../frontend:/app
+
   db:
     image: postgres:13
     environment:
@@ -51,6 +55,15 @@ services:
       - "5432:5432"
     volumes:
       - postgres-data:/var/lib/postgresql/data
+
+  action-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.actions
+    ports:
+      - "5055:5055"
+    volumes:
+      - ./actions:/app/actions
 
 volumes:
   postgres-data:

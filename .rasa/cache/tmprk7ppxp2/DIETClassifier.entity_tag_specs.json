@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-feedback",
+      "2": "I-feedback",
+      "3": "L-feedback",
+      "4": "U-feedback",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-feedback": 1,
+      "I-feedback": 2,
+      "L-feedback": 3,
+      "U-feedback": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

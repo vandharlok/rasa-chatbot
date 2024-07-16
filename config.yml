@@ -39,7 +39,7 @@ pipeline:
   ambiguity_threshold: 0.2
   core_fallback_action_name: "action_custom_fallback"
 - name: DucklingEntityExtractor
-  url: http://localhost:8000
+  url: http://duckling:8000
   dimensions: ["time", "PhoneNumber"]
   locale: pt_BR
   timezone: "America/Sao_Paulo"

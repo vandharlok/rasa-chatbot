@@ -3,5 +3,7 @@ results/*
 train_test_split/*
 tensorboard/*
 node_modules/*
-**/*.md  
-venv
+.cache/*
+.rasa/*
+.vscode/*
+git
