@@ -12,28 +12,21 @@ services:
       - db
       - frontend
     environment:
-      - DATABASE_URL=postgresql://vanderson:senha@db:5432/chatbot
+      - DATABASE_URL=postgresql://${PG_USER}:${PG_PASSWORD}@db:5432/${PG_DATABASE}
   
-    
-    
   duckling:
     image: rasa/duckling
     ports:
       - "8000:8000"
 
   backend:
-    build: ../backend-chat
+    build: ../backend-chatbot-main
     ports:
       - "3010:3010"
     volumes:
-      - ../backend-chat:/app
+      - ../backend-chatbot-main:/app
     environment:
       - NODE_ENV=production
-      - PG_HOST=db
-      - PG_PORT=5432
-      - PG_USER=vanderson
-      - PG_PASSWORD=senha
-      - PG_DATABASE=chatbot
     depends_on:
       - db
 
@@ -48,9 +41,9 @@ services:
   db:
     image: postgres:13
     environment:
-      POSTGRES_USER: vanderson
-      POSTGRES_PASSWORD: senha
-      POSTGRES_DB: chatbot
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+      POSTGRES_DB: ${PG_DATABASE}
     ports:
       - "5432:5432"
     volumes:
