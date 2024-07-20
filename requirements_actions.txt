@@ -1,10 +1,5 @@
 rasa==3.7.0b1
 rasa-sdk==3.7.1
 pytz==2022.7.1
-requests==2.31.0
 dateparser==1.2.0
-google-api-core==2.8.0
-google-api-python-client==2.126.0
-google-auth==2.29.0
-google-auth-httplib2==0.2.0
-google-auth-oauthlib==1.0.0
+
