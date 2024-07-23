@@ -1,5 +1,5 @@
 <h1>Chatbot para Clínica Médica</h1>
-<p>Este repositório contém um chatbot desenvolvido com o framework Rasa, projetado para facilitar o atendimento em clínicas médicas. O bot pode responder perguntas frequentes e agendar consultas diretamente no Google Calendar.</p>
+<p>Este repositório contém um chatbot desenvolvido com o framework Rasa, projetado para facilitar o atendimento em clínicas médicas. O bot pode responder perguntas frequentes e agendar consultas diretamente no Google Calendar / API propria de calendario.</p>
 
 <h2>Funcionalidades</h2>
 <ul>
