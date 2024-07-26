@@ -30,6 +30,16 @@ services:
     depends_on:
       - db
 
+  calendar:
+    build:
+      context: ../chatbot-portal-web-main
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../chatbot-portal-web-main:/app
+    depends_on:
+      - backend
+
   frontend:
     build:
       context: ../frontend
