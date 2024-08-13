@@ -4,7 +4,7 @@
 <h2>Funcionalidades</h2>
 <ul>
   <li><strong>Responder FAQs</strong>: Fornece respostas instantâneas às perguntas mais frequentes dos pacientes.</li>
-  <li><strong>Agendamento de Consultas</strong>: Integra-se com a API do Google Calendar para marcar consultas diretamente através do chat.</li>
+  <li><strong>Agendamento de Consultas</strong>: Integra-se com a API do Google Calendar, e também a API própria do calendario frontend, para marcar consultas diretamente através do chat.</li>
 </ul>
 
 <p>Recomendo utilizar um ambiente como anaconda ou miniconda, e criar um ambiente python na versão 3.9 para não ter problemas com incompatibilidades:</p>
@@ -17,8 +17,6 @@ conda create --name projeto python=3.9
 <ul>
   <li>Docker</li>
   <li>Docker Compose</li>
-  <li>Node.js</li>
-  <li>Sequelize CLI</li>
 </ul>
 
 Para utilização do algoritmo duckling na pipeline, o qual e resposavel por extrair as entidades de data, instale docker no seu pc e faça o pull do rasa/duckling dessa forma:
@@ -35,12 +33,6 @@ docker run -p 8000:8000 rasa/duckling
   <li>Para Linux, siga estas <a href="https://docs.docker.com/compose/install/">instruções</a>.</li>
 </ul>
 
-<h3>Node.js e Sequelize CLI</h3>
-<p><strong>Node.js</strong>: Pode ser baixado e instalado a partir <a href="https://nodejs.org/">daqui</a>.</p>
-<p><strong>Sequelize CLI</strong>: Após instalar o Node.js, instale o Sequelize CLI globalmente usando npm:</p>
-<code>
-npm install -g sequelize-cli
-</code>
 
 <h2>Configuração da API do Google Calendar</h2>
 <p>Para integrar o chatbot com o Google Calendar, você precisará de um token de acesso, que será criado na raiz do projeto para que ele possa funcionar:</p>
@@ -95,6 +87,8 @@ tensorboard --logdir ./tensorboard
 
 <p>Este exemplo cobre a instalação e a configuração básica. Certifique-se de ajustar as instruções conforme necessário para o seu projeto específico, especialmente no que se refere aos caminhos dos diretórios e configurações específicas do seu ambiente.</p>
 
+
+<strong>O codigo do backend, frontend calendar, frontend chatbot, não está disponivel nesse código, para mais informações sobre o projeto todo, por favor, e-mail me: vandersonaugusto6@gmail.com</strong>  
 
 <strong> Veja o chatbot funcionando em : </strong> 
 https://www.youtube.com/watch?v=Rgx1upuoqBk
