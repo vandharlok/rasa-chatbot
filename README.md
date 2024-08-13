@@ -89,6 +89,8 @@ tensorboard --logdir ./tensorboard
 
 
 <strong>O codigo do backend, frontend calendar, frontend chatbot, não está disponivel nesse código, para mais informações sobre o projeto todo, por favor, e-mail me: vandersonaugusto6@gmail.com</strong>  
+<strong>O codigo de actions utiliza o backend e frontend próprio, tambem para uso do calendario, então se utilizar se quiser utilizar a API do Google Calendar, mova o arquivo actions_api_calendar para pasta actions, e substitua pelo arquivo actions.py.</strong>  
+
 
 <strong> Veja o chatbot funcionando em : </strong> 
 https://www.youtube.com/watch?v=Rgx1upuoqBk
