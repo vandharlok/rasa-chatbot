@@ -77,11 +77,6 @@ tensorboard --logdir ./tensorboard
 <strong> Desempenhando um bom acc e loss diminuindo com o tempo. </strong>
 
 
-<h3>Configuração do Nginx para o frontend</h3>
-<p>As configurações de Nginx estão localizadas no diretório <strong>nginx</strong>.</p>
-<p>Certifique-se de que o Nginx está configurado para servir o frontend estático e redirecionar adequadamente as solicitações para o backend do chatbot.</p>
-<p>Acesse o chatbot através do navegador em <a href="http://localhost:3001">http://localhost:3001</a></p>
-
 <h2>Suporte</h2>
 <p>Para obter ajuda com a configuração ou uso do chatbot, abra uma issue neste repositório.</p>
 
