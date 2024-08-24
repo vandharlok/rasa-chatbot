@@ -36,9 +36,10 @@ docker run -p 8000:8000 rasa/duckling
   <li>Baixe o arquivo JSON das credenciais e guarde-o de forma segura.</li>
 </ul>
 
-<h2>Para funcionar</h2>
+<h2>Execução</h2>
 <p>Para pode rodar o rasa core and rasa nlu</p>
 <ul>
+  <li>rasa train</li>
   <li>rasa run actions</li>
   <li>rasa shell </li>
 </ul>
