@@ -1,38 +1,28 @@
 <h1>Chatbot para Clínica Médica</h1>
-<p>Este repositório contém um chatbot desenvolvido com o framework Rasa, projetado para facilitar o atendimento em clínicas médicas. O bot pode responder perguntas frequentes e agendar consultas diretamente no Google Calendar / API propria de calendario.</p>
+<p>Este repositório contém um chatbot desenvolvido com o framework Rasa, projetado para facilitar o atendimento em clínicas médicas. O bot pode responder perguntas frequentes, agendar consultas, remarcar consultas, cancelar consultas, diretamente no Google Calendar / API propria de calendario.</p>
 
 <h2>Funcionalidades</h2>
 <ul>
   <li><strong>Responder FAQs</strong>: Fornece respostas instantâneas às perguntas mais frequentes dos pacientes.</li>
-  <li><strong>Agendamento de Consultas</strong>: Integra-se com a API do Google Calendar, e também a API própria do calendario frontend, para marcar consultas diretamente através do chat.</li>
+  <li><strong>Agendamento de Consultas</strong>: Integra-se com a API do Google Calendar, e também a API própria do calendario</li>
 </ul>
 
-<p>Recomendo utilizar um ambiente como anaconda ou miniconda, e criar um ambiente python na versão 3.9 para não ter problemas com incompatibilidades:</p>
+<p>Utilizar um ambiente como anaconda ou miniconda, e criar um ambiente python na versão 3.9 para não ter problemas com incompatibilidades:</p>
 <code>
-conda create --name projeto python=3.9
+conda create --name chatbot python=3.9
 </code>
 
 <h2>Pré-requisitos</h2>
-<p>Antes de iniciar, você precisará instalar:</p>
+<p>Antes de iniciar, basta voce instalar os requirements:</p>
 <ul>
-  <li>Docker</li>
-  <li>Docker Compose</li>
+  <li>pip install -r requirements_txt</li>
+  <li>pip install -r requirements_actions_txt</li>
 </ul>
 
 Para utilização do algoritmo duckling na pipeline, o qual e resposavel por extrair as entidades de data, instale docker no seu pc e faça o pull do rasa/duckling dessa forma:
 
 docker pull rasa/duckling
 docker run -p 8000:8000 rasa/duckling
-
-
-<h2>Configuração do Ambiente</h2>
-<h3>Docker e Docker Compose</h3>
-<p>Instruções para instalação:</p>
-<ul>
-  <li>Incluído no Docker Desktop para Windows e Mac.</li>
-  <li>Para Linux, siga estas <a href="https://docs.docker.com/compose/install/">instruções</a>.</li>
-</ul>
-
 
 <h2>Configuração da API do Google Calendar</h2>
 <p>Para integrar o chatbot com o Google Calendar, você precisará de um token de acesso, que será criado na raiz do projeto para que ele possa funcionar:</p>
@@ -46,22 +36,12 @@ docker run -p 8000:8000 rasa/duckling
   <li>Baixe o arquivo JSON das credenciais e guarde-o de forma segura.</li>
 </ul>
 
-<h2>Instalação e Execução</h2>
-<p>Clone o repositório:</p>
-<code>
-git clone &lt;URL_DO_REPOSITORIO&gt;
-cd &lt;NOME_DO_REPOSITORIO&gt;
-</code>
-
-<p>Instale as dependências do Rasa:</p>
-<code>
-pip install -r requirements.txt
-</code>
-
-<p>Inicie os serviços usando Docker Compose:</p>
-<code>
-docker-compose up -d --build
-</code>
+<h2>Para funcionar</h2>
+<p>Para pode rodar o rasa core and rasa nlu</p>
+<ul>
+  <li>rasa run actions</li>
+  <li>rasa shell </li>
+</ul>
 
 Você pode analisar o desempenho do chatbot, como f1-score, recall, accuracy, loss, t-loss, utilizando o tensorboard, o projeto ja tem o tensorboard monitorando na pipeline, para obter as métricas, basta instalar o tensorboard, e rodar o comando: 
 
