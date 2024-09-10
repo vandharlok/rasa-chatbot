@@ -17,6 +17,7 @@ conda create --name chatbot python=3.9
 <ul>
   <li>pip install -r requirements_txt</li>
   <li>pip install -r requirements_actions_txt</li>
+  <li>pip install https://github.com/explosion/spacy-models/releases/download/pt_core_news_md-3.7.0/pt_core_news_md-3.7.0.tar.gz</li>
 </ul>
 
 Para utilização do algoritmo duckling na pipeline, o qual e resposavel por extrair as entidades de data, instale docker no seu pc e faça o pull do rasa/duckling dessa forma:
@@ -49,14 +50,6 @@ Você pode analisar o desempenho do chatbot, como f1-score, recall, accuracy, lo
 pip install tensorboard
 
 tensorboard --logdir ./tensorboard
-<strong>Métricas atuais: </strong>
-
-![image](https://github.com/vandharlok/rasa-chatbot/assets/104177726/9e6c9697-a296-4fd2-8819-c27c2dacaa36)
-![image](https://github.com/vandharlok/rasa-chatbot/assets/104177726/3e43f652-0dbe-4271-9bc6-0614f399f196)
-
-
-<strong> Desempenhando um bom acc e loss diminuindo com o tempo. </strong>
-
 
 <h2>Suporte</h2>
 <p>Para obter ajuda com a configuração ou uso do chatbot, abra uma issue neste repositório.</p>
