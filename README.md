@@ -59,8 +59,9 @@ tensorboard --logdir ./tensorboard
 <h2>Metricas</h2>
 <p>Ultimas atualizacoes das metricas de desempenho do chatbot</p>
 <ul>
-![image](https://github.com/user-attachments/assets/f6ebebb3-bf34-4378-935f-e7351d4604e3)
-![image](https://github.com/user-attachments/assets/20282e46-9ad1-48aa-b4d4-5f0e5b0f5e14)
+  
+<img src = "https://github.com/user-attachments/assets/f6ebebb3-bf34-4378-935f-e7351d4604e3)">
+<img src = "https://github.com/user-attachments/assets/20282e46-9ad1-48aa-b4d4-5f0e5b0f5e14) ">
 </ul>
 
 
