@@ -56,9 +56,17 @@ tensorboard --logdir ./tensorboard
 
 <p>Este exemplo cobre a instalação e a configuração básica. Certifique-se de ajustar as instruções conforme necessário para o seu projeto específico, especialmente no que se refere aos caminhos dos diretórios e configurações específicas do seu ambiente.</p>
 
+<h2>Metricas</h2>
+<p>Ultimas atualizacoes das metricas de desempenho do chatbot</p>
+<ul>
+![image](https://github.com/user-attachments/assets/f6ebebb3-bf34-4378-935f-e7351d4604e3)
+![image](https://github.com/user-attachments/assets/20282e46-9ad1-48aa-b4d4-5f0e5b0f5e14)
+</ul>
 
-<strong>O codigo do backend, frontend calendar, frontend chatbot, não está disponivel nesse código, para mais informações sobre o projeto todo, por favor, e-mail me: vandersonaugusto6@gmail.com</strong>  
-<strong>O codigo de actions utiliza o backend e frontend próprio, tambem para uso do calendario, então se utilizar se quiser utilizar a API do Google Calendar, mova o arquivo actions_api_calendar para pasta actions, e substitua pelo arquivo actions.py.</strong>  
+
+
+<strong>Para mais informações sobre o projeto todo, por favor, e-mail me: vandersonaugusto6@gmail.com</strong>  
+
 
 <strong>Disponibilizo um frontend para web para poder rodar o rasa no meus repositorios, chamado, front_calendar, com ele e possivel rodar o rasa no web. Com isso, basta rodar os seguintes comandos no rasa : rasa run actions, rasa run --enable-api --cors "*"</strong>  
 
