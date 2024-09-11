@@ -15,15 +15,23 @@ language: pt
 pipeline:
 - name: SpacyNLP
   model: pt_core_news_md
+  case_sensitive: False
 - name: SpacyTokenizer
+  case_sensitive: False
 - name: SpacyFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
 - name: DIETClassifier
-  epochs: 60
-  learning_rate: 0.0006  
-  constrain_similarities: true
-  batch_size: 16  
+  epochs: 38
+  learning_rate: 0.0006
+  entity_recognition: False  
+  constrain_similarities: True
+  batch_size: 8  #quantidade de exemplos que sera processado de uma so vez em cada iteracao
   early_stopping_patience: 10
-  checkpoint_model: true
+  evaluate_on_number_of_examples: 80
+  evaluate_every_number_of_epochs: 1
   tensorboard_log_directory: "./tensorboard/DIET"
   tensorboard_log_level: epoch
 - name: FallbackClassifier
